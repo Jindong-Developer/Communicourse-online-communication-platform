@@ -14,9 +14,9 @@ Step 2:  download the Activator tools "http://www.lightbend.com/community/core-t
       2.3 you can start to write your code in the website.
 
 Step 3: once you write some codes, you can push it to the repository, better with following commands:
-      git pull
-      git add *
-      git commit -m  "some description"
-      git push
+      "git pull"
+      "git add *"
+      "git commit -m  "some description" "
+      "git push"
 
 The models and interfaces are proposed in the repository. you can get familar about it and give some advices.
