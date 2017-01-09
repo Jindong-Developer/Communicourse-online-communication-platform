@@ -1,0 +1,25 @@
+New log file opened at Mon Jan 09 00:54:44 CET 2017 by 35106@Jindongs-MacBook-Pro.local
+Taking next connection to: 60496
+New client attempting to connect on port: 60738-60496
+  Address = /192.168.0.102:60496
+This client on port 60738 has uuid 0de38ce5-fa9f-40aa-9e28-a053d9c7da5c configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-0de38ce5-fa9f-40aa-9e28-a053d9c7da5c
+Taking next connection to: 60496
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 60496
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 60496
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 60496
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 60496
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 60496
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 60496
