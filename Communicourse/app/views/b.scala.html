@@ -1,0 +1,60 @@
+@*
+ * This template takes a single argument, a String containing a
+ * message to display.
+ *@
+@(message: String)
+
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>登录</title>
+    <link rel="stylesheet" type="text/css" href="styles/login.css" />
+</head>
+<body>
+    <form id="user-login-form" role="form" action='@routes.UserController.login()' method="post" >
+    <div class="LoginBottomBg">
+        <div class="LoginTopBg">
+            <div class="LoginBox">
+                <div class="LoginTop">
+                    &nbsp;
+                </div>
+                
+                   <input name="chat_grupe" id="chat_grupe" type="hidden" value="000000">
+                   <input name="quizzes" id="quizzes" type="hidden" value="000000">
+                   <input name="favourites" id="favourites" type="hidden" value="000000">
+                    <input name="email" id="email" type="hidden" value="adaf@@asd.com">
+                     <input name="identify" id="identify" type="hidden" value="000000">
+    
+                <div class="LogoImg">
+                    &nbsp;
+                </div>
+                <table class="LoginTb">
+                    <tr>
+                        <td class="LoginTbLeft">
+                            username:
+                              <input name="userName" id="userName" type="text" style="width:100px; height:22px;">
+                      </td>
+                        <td rowspan="3" class="LoginTbRight">
+					       
+					    
+					    <input type="submit" value="login" name="Submit"  class="btn" onmouseover="changebg(this,'1')" onmouseout="changebg(this,'1')">
+    
+					  </td>
+                    </tr>
+                    <tr>
+                     <td class="LoginTbLeft">
+                        </td>
+                    </tr>
+                    <tr>
+                      <td class="LoginTbLeft">
+                             password:
+                            <input type="password" name="password" id="password" style="width:100px; height:22px;">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>

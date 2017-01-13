@@ -1,0 +1,60 @@
+
+
+@(chatgroupForm: Form[model.ChatgroupFormData],chatgroups : Seq[model.Chatgroup],userid: String)(implicit request: RequestHeader)
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>闂傚倷鐒﹀妯肩矓瑜版帒鐒垫い鎴ｆ硶閸斿秶绱掗弬娆剧吋鐎规洩绻濋弫鎾绘晸閿燂拷</title>
+<script language="javascript" src="js/js.js"></script>
+<script language="JavaScript" src="js/My97DatePicker/WdatePicker.js" type="text/javascript"></script>
+<link href="styles/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<form name="myform1" method="post">
+  <table class="table11" cellpadding="0" cellspacing="0" style="width:80%;">
+    <tr>
+      <th style="width:70px;padding:0;"></th>
+      <th style="width:90px;padding:0;"></th>
+      <th style="width:70px;padding:0;"></th>
+      <th style="width:80px;padding:0;"></th>
+      <th style="width:50px;padding:0;"></th>
+    </tr>
+    
+  
+    
+    
+    <tr>
+      <th style="text-align:center;">Group_Name</th>
+      <th style="text-align:center;">Exit</th>
+    </tr>
+
+
+
+
+ @for(chatgroup <- chatgroups){
+                   
+                    @if(chatgroup.owner == userid.slice(5,userid.length-1)) {
+                    <tr>
+                        <td style="text-align:center;">@chatgroup.group_name</td>
+                        <td style="text-align:center;"><a href="@routes.ChatgroupController.deleteChatgroup(chatgroup.idc)">delete</a></td>
+                    </tr>
+                    
+                    }
+                    
+                    @if(chatgroup.members.contains(","+ userid.slice(5,userid.length-1)+",") ) {
+                    <tr>
+                        <td style="text-align:center;">@chatgroup.group_name</td>
+                        <td style="text-align:center;"><a href="@routes.ChatgroupController.exitchatgroup(chatgroup.idc.toString+":"+chatgroup.members+":"+userid.slice(5,userid.length-1))">exit</a></td>
+                    </tr>
+                    
+                    }
+                    
+                    }
+  </table>
+<br/>
+</form>
+</body>
+</html>
