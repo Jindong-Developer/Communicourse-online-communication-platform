@@ -2,59 +2,153 @@
 @(userForm: Form[model.UserFormData],users : Seq[model.User])
 
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<title>Register</title>
-<link href="styles/style.css" rel="stylesheet" type="text/css">
-<script language="javascript" src="js/js.js"></script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    <title>Communicourse Register</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/login.css" />
+    <style>
+		td.LoginTbLeft {
+    width: 65%;
+}
+.LoginTop {
+    height: 0px;
+}
+		
+	</style>
 </head>
+
 <body>
-<div style="width:30%;margin: 0 auto; margin-top:15px; ">
-  <table class="table11">
-    <tr>
-      <th style="padding:0 0 0 0; width:30%;"></th>
-      <th style="padding:0 0 0 0;"></th>
-    </tr>
-    <tr>
-      <th colspan="2">&nbsp;</th>
-    </tr>
-           <form id="user-data-form" role="form" action='@routes.UserController.addUser()' method="post" >
-    <tr>
-      <td style="text-align:right;">identify</td>
-      <td style="text-align:left;">
-		  
-		  <select name="identify" id="identify">
-		        <option value="-1" selected="selected">----</option>
-		        <option>student</option>
-		        <option>professor</option>
-		      </select>
-	  
-	   </td>
-    </tr>
-    <tr>
-      <td style="text-align:right;">username</td>
-      <td style="text-align:left;"><input name="userName" id="userName" type="test" style="width:85%;" value="">      </td>
-    </tr>
-    <tr>
-      <td style="text-align:right;">email</td>
-      <td style="text-align:left; "><input name="email" id="email" type="email" style="width:85%;" value="" size="30">      </td>
-    </tr>
-    <tr>
-      <td style="text-align:right;">password</td>
-      <td style="text-align:left; "><input name="password" id="password" type="password" style="width:85%;" value="" size="30">      </td>
-    </tr>
-    <input name="chat_grupe" id="chat_grupe" type="hidden" value=",">
-    <input name="quizzes" id="quizzes" type="hidden" value="000000">
-    <input name="favourites" id="favourites" type="hidden" value="000000">
-    <tr>
-      <td colspan="2" align="center"><input type="submit" name="Submit" value="register" class="btn" onmouseover="changebg(this,'1')" onmouseout="changebg(this,'1')">
-        &nbsp;&nbsp;
-        <input name="Submit2222" type="submit"  onclick="javascript:history.go(-1)" value="return" class="btn" onmouseover="changebg(this,'1')" onmouseout="changebg(this,'1')" />      </td>
-    </tr>
+<input type="file" name="picture"/>
+    <form id="user-data-form" role="form" action='@routes.UserController.addUser()' method="post" >
+
+    <div class="LoginBottomBg">
+
+        <div class="LoginTopBg">
+
+            <div class="LoginBox">
+
+                <div class="LoginTop">
+
+                    &nbsp;
+
+                </div>
+
+                <div class="LogoImg">
+
+                    &nbsp;
+
+                </div>
+
+                <table class="LoginTb">
+                    
+                    <tr>
+
+                        <td class="LoginTbLeft">
+
+                           <h2>Communicourse Registration</h2>  <br>
+
+                      </td>
+                        
+
+				  <td rowspan="3" class="LoginTbRight"> </td> </tr>
+                   
+
+                    <tr>
+
+                        <td class="LoginTbLeft">
+
+                            User name:
+
+                              <input name="userName" id="userName" type="text" style="width:180px; height:22px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                      </td>
+                        
+
+				  <td rowspan="3" class="LoginTbRight"> </td> </tr>
+                    <tr>
+
+                      <td class="LoginTbLeft"> </td>
+
+                    </tr>
+
+                    <tr>
+
+                      <td class="LoginTbLeft">
+
+                            Password:
+
+                            <input type="password" name="password" id="password" style="width:180px; height:22px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+
+                        </td>
+
+                    </tr>
+                    <tr>
+
+                      <td class="LoginTbLeft">
+
+                            Password again:
+
+                            <input type="password" name="password_again" id="password_again" style="width:180px; height:22px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+
+                        </td>
+
+                    </tr>
+                    
+                    <tr>
+
+                      <td class="LoginTbLeft">
+
+                            Email:
+
+                            <input type="email" name="email" id="email" style="width:180px; height:22px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+
+                        </td>
+
+                    </tr>
+                    <tr>
+
+                      <td class="LoginTbLeft">
+
+                            Identity:
+                            <select style="width:180px; height:22px;" name="identify" id="identify" >
+  <option value ="student">student</option>
+  <option value ="tutor">tutor</option>
+  <option value="professor">professor</option>
+</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br><br><br>
+
+
+                        </td>
+
+                    </tr>
+                    <tr>
+
+                      <td class="LoginTbLeft">
+
+                           <button type="submit" style="width:45px; height:20px;background:url(images/signup_btn.jpg)"></button>
+
+                        </td>
+
+                    </tr>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
     </form>
-  </table>
-</div>
+
 </body>
+
 </html>
+

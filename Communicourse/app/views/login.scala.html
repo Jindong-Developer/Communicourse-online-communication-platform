@@ -2,65 +2,115 @@
 @(userForm: Form[model.UserFormData],users : Seq[model.User])
 <!DOCTYPE html>
 
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
 <head>
+
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>登录</title>
-    <link rel="stylesheet" type="text/css" href="styles/login.css" />
+
+    <title>Communicourse SignUp</title>
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/login.css" />
+
 </head>
+
 <body>
-    <form id="user-login-form" role="form" action='@routes.UserController.login()' method="post" >
+
+     <form id="user-login-form" role="form" action='@routes.UserController.login()' method="post" >
+
     <div class="LoginBottomBg">
+
         <div class="LoginTopBg">
-            <div class="LoginBox">
+
+            <div class="LoginBox" style="background: url('images/login_box.gif') no-repeat center;">
+
                 <div class="LoginTop">
+
                     &nbsp;
+
                 </div>
-                
-                   <input name="chat_grupe" id="chat_grupe" type="hidden" value="000000">
-                   <input name="quizzes" id="quizzes" type="hidden" value="000000">
-                   <input name="favourites" id="favourites" type="hidden" value="000000">
-                    <input name="email" id="email" type="hidden" value="adaf@@asd.com">
-                     <input name="identify" id="identify" type="hidden" value="000000">
-    
+
                 <div class="LogoImg">
+
                     &nbsp;
+
                 </div>
+
                 <table class="LoginTb">
+
                     <tr>
+
                         <td class="LoginTbLeft">
-                            username:
-                              <input name="userName" id="userName" type="text" style="width:100px; height:22px;">
+
+                            User name:
+
+                              <input name="userName" id="userName" type="text" style="width:100px; height:22px;" value="David">
+
                       </td>
+
                         <td rowspan="3" class="LoginTbRight">
-					       
-					    
-					    <input type="submit" value="login" name="Submit"  class="btn" onmouseover="changebg(this,'1')" onmouseout="changebg(this,'1')">
-    
+
+						<button type="submit" style="width:45px; height:20px;background:url(images/signup_btn.jpg)"></button>
+
+				
+
+							<br><br>
+						                      <a href="find_password.html">
+
+			<U>Forget your Password? </U>
+
+							</a>
+						                      <br><br>
+						                      <a href="@routes.UserController.register()">
+
+			<U>Create an Account?</U>
+
+							</a> 
+							                      
+
 					  </td>
-                    </tr>
+                      
+
                     <tr>
-                     <td class="LoginTbLeft">
+
+                        <td class="LoginTbLeft">
+
                         </td>
+
                     </tr>
+
                     <tr>
+
                       <td class="LoginTbLeft">
-                             password:
-                            <input type="password" name="password" id="password" style="width:100px; height:22px;">
+
+                            password:
+
+                            <input type="password" name="password" style="width:100px; height:22px;" value="sd">
+
                         </td>
-                        
-                        
-					       
-					    
-					    <td style="text-align:center;">
-					    <a href="@routes.UserController.register()">register</a>
-					        
-					    </td>
-                    
-					 
+						
+						<input name="chat_grupe" id="chat_grupe" type="hidden" value="000000">
+						<input name="quizzes" id="quizzes" type="hidden" value="000000">
+						<input name="favourites" id="favourites" type="hidden" value="000000">
+						<input name="email" id="email" type="hidden" value="adaf@@asd.com">
+					    <input name="identify" id="identify" type="hidden" value="000000">
+						
+
                     </tr>
+
                 </table>
+
             </div>
+
         </div>
+
     </div>
+
     </form>
+
 </body>
+
+</html>
+

@@ -1,24 +1,104 @@
-@*
- * This template is called from the `index` template. This template
- * handles the rendering of the page header and body tags. It takes
- * two arguments, a `String` for the title of the page and an `Html`
- * object to insert into the body of the page.
- *@
-@(title: String)(content: Html)
+@(chatgroupForm: Form[model.ChatgroupFormData],chatgroupso : Seq[model.Chatgroup],chatgroupsm : Seq[model.Chatgroup],a:Int)
 
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        @* Here's where we render the page title `String`. *@
-        <title>@title</title>
-        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/main.css")">
-        <link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned("images/favicon.png")">
-        <script src="@routes.Assets.versioned("javascripts/hello.js")" type="text/javascript"></script>
-    </head>
-    <body>
-        @* And here's where we render the `Html` object containing
-         * the page content. *@
-        @content
-        aaaaaaaaaaaaaaaaaaaaaa
-    </body>
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <!-- HTTP 1.1 -->
+	<meta http-equiv="Cache-Control" content="no-store"/>
+	<!-- HTTP 1.0 -->
+	<meta http-equiv="Pragma" content="no-cache"/>
+	<!-- Prevents caching at the Proxy Server -->
+	<meta http-equiv="Expires" content="0"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	
+	<script type="text/javascript">
+	    var domain=document.URL;
+	    var domains=domain.split("/");
+	    var domain2=domains[0]+"//"+domains[2];
+	  
+	    //alert(domain2);
+	    document.write('<base href="'+domain2+'"/>');
+	</script>
+	
+	<link rel="stylesheet" type="text/css" href="Ext/resources/css/ext-all.css"/>
+	<script type="text/javascript" src="Ext/adapter/ext/ext-base.js"></script>
+	<script type="text/javascript" src="Ext/ext-all.js"></script>
+	<script type="text/javascript">Ext.BLANK_IMAGE_URL = 'images/s.gif';</script>
+	<link rel="stylesheet" type="text/css" href="stylesheets/messages.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css"/>
+    <title>Communicourse @a</title>  
+    <script language="javascript">
+		
+		function chatGroups(){
+		var chatGroups_root = new Ext.tree.TreeNode({
+        id:"root1",
+		collapsible :false,
+        text:"root1",
+       });
+
+    
+  
+	//for(i;i<@a;i++)
+	@for(group <- chatgroupso){
+	
+	//	var name='@chatgroupso.apply(1).group_name';
+		//var name=name.replace('?',i);
+		chatGroups_root.appendChild(new Ext.tree.TreeNode({
+        id: '@group.idc',
+        icon:'images/user.gif',
+        text:'@group.group_name',
+        listeners:{
+            'click':function(node, event) {
+                event.stopEvent();
+                var n = tab.getComponent(node.id);
+                var url = 'getChatgroup/@group.idc';
+                if (!n) { //判断是否已经打开该面板
+                    n = actionFn(node, url);
+                } else {
+                    tab.remove(n);
+                    n = tab.getComponent(node.id);
+                    n = actionFn(node, url);
+                }
+                tab.setActiveTab(n);
+            }
+        }
+    }));
+
+
+}
+	
+		
+		
+	
+	
+	
+		return chatGroups_root;  }  
+         </script>  
+</head>
+<body>
+<div id="loading-mask" style=""></div>
+<div id="loading">
+    <div class="loading-indicator">
+    </div>
+	<script language="javascript" src="js/menuManager.js"></script>
+    <script language="javascript">
+		
+		
+         </script>
+    <div id="north">
+        <span id="test"></span>
+            <div height="20" class="api-title" style="height:90px">			
+                <img src="images/top.jpg" width="1400">
+            </div>   
+    </div>
+    <div id="south">
+        <div style="float:left;margin:5px;font:normal 12px tahoma, arial, sans-serif;">
+            <span style="color:aliceblue; margin:5px 5px 5px 520px;"> Copyright@@Communicourse</span>
+            &nbsp;
+        </div>
+    </div>
+</div>
+</body>
 </html>

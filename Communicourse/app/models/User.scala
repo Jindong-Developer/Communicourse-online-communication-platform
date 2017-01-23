@@ -9,9 +9,9 @@ import slick.driver.JdbcProfile
 import slick.driver.MySQLDriver.api._
 import scala.concurrent.ExecutionContext.Implicits.global
 
-case class User(id: Long, identify: String, userName: String, password: String, email: String, chat_grupe: String, quizzes: String, favourites: String)
+case class User(id: Long, identify: String, userName: String, password: String, email: String,  quizzes: String, favourites: String)
 
-case class UserFormData(identify: String, userName: String, password: String, email: String, chat_grupe: String, quizzes: String, favourites: String)
+case class UserFormData(identify: String, userName: String, password: String, email: String)
 
 object UserForm {
 
@@ -20,10 +20,8 @@ object UserForm {
       "identify" -> nonEmptyText,
       "userName" -> nonEmptyText,
       "password" -> nonEmptyText,
-       "email" -> email,
-      "chat_grupe" -> text,
-      "quizzes" -> text,
-      "favourites" -> text
+       "email" -> email
+     
     )(UserFormData.apply)(UserFormData.unapply)
   )
 }
@@ -35,12 +33,11 @@ class UserTableDef(tag: Tag) extends Table[User](tag, "user") {
   def userName = column[String]("userName")
   def password = column[String]("password")
   def email = column[String]("email")
-  def chat_grupe = column[String]("chat_grupe")
   def quizzes = column[String]("quizzes")
   def favourites = column[String]("favourites")
 
   override def * =
-    (id, identify, userName, password, email,chat_grupe,quizzes,favourites) <>(User.tupled, User.unapply)
+    (id, identify, userName, password, email,quizzes,favourites) <>(User.tupled, User.unapply)
 }
 
 object Users {
@@ -60,21 +57,37 @@ object Users {
   }
 
   def get(id: Long): Future[Seq[User]] = {
-    dbConfig.db.run(users.filter(_.id === id).result)
+    dbConfig.db.run(users.filter(_.id === id.toLong).result)
   }
   
   def check(userName: String, password: String): Future[Seq[User]] = {
     dbConfig.db.run(users.filter(_.userName === userName).filter( _.password === password).result)
   }
   
-   def update_chatgroup(id: String, chatgroup: String): Future[Int] = {
+  def checkpassword(id: Long, password: String): Future[Seq[User]] = {
+    dbConfig.db.run(users.filter(_.id === id).filter( _.password === password).result)
+  }
+  
+
+  
+  def update_password(id: String, password: String): Future[Int] = {
  
-        dbConfig.db.run(users.filter(_.id === id.toLong).map(p => (p.chat_grupe))
-        .update("1"))
+        dbConfig.db.run(users.filter(_.id === id.toLong).map(p => (p.password))
+        .update(password))
+  }
+  
+  
+  
+  def update_personalinfor(id: String, name: String, email: String): Future[Int] = {
+ 
+        dbConfig.db.run(users.filter(_.id === id.toLong).map(p => (p.userName,p.email))
+        .update(name,email))
   }
 
   def listAll: Future[Seq[User]] = {
     dbConfig.db.run(users.result)
   }
+  
+ 
 
 }

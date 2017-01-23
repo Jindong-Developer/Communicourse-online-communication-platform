@@ -5,8 +5,8 @@ import scala.concurrent.Future
 
 object ChatgroupService {
 
-  def addChatgroup(user: Chatgroup): Future[String] = {
-    Chatgroups.add(user)
+  def addChatgroup(chatgroup: Chatgroup): Future[String] = {
+    Chatgroups.add(chatgroup)
   }
 
   def deleteChatgroup(idc: Long): Future[Int] = {

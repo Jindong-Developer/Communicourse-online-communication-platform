@@ -13,8 +13,10 @@ object UserService {
     Users.delete(id)
   }
   
-  def update_chatgroup(id: String,chatgroup:String): Future[Int] = {
-    Users.update_chatgroup(id,chatgroup)
+
+  
+  def update_password(id: String,password:String): Future[Int] = {
+    Users.update_password(id,password)
   }
 
   def getUser(id: Long): Future[Seq[User]] = {
@@ -24,8 +26,16 @@ object UserService {
   def checkUser(userName: String, password: String): Future[Seq[User]] = {
     Users.check(userName,password)
   }
+  
+  def checkPassword(id: Long, password: String): Future[Seq[User]] = {
+    Users.checkpassword(id,password)
+  }
 
   def listAllUsers: Future[Seq[User]] = {
     Users.listAll
+  }
+
+  def update_personalinfor(id: String,name:String,email:String): Future[Int] = {
+    Users.update_personalinfor(id,name,email)
   }
 }

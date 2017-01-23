@@ -1,34 +1,73 @@
-# play-slick3-steps example
-[![Codacy Badge](https://api.codacy.com/project/badge/grade/740e586f17964c779ce3c146c272c560)](https://www.codacy.com)
-[![Build Status](https://travis-ci.org/pedrorijo91/play-slick3-steps.svg)](https://travis-ci.org/pedrorijo91/play-slick3-steps)
+# Play Chatroom
 
-Simple working app using play 2.4 and slick 3.1.0 with mysql. Step by step tutorial at [https://pedrorijo91.github.io/blog/play-slick/](https://pedrorijo91.github.io/blog/play-slick/)
+This is a simple chatroom using Play and Websockets with the Scala API.
 
-Created since the [available demos](https://github.com/playframework/play-slick/tree/master/samples) have too much irrelevant code to who wants to integrate slick 3.1.0 with a play app.
+This project makes use of [dynamic streams](http://doc.akka.io/docs/akka/current/scala/stream/stream-dynamic.html) from Akka Streams, notably `BroadcastHub` and `MergeHub`.  By [combining MergeHub and BroadcastHub](http://doc.akka.io/docs/akka/current/scala/stream/stream-dynamic.html#Dynamic_fan-in_and_fan-out_with_MergeHub_and_BroadcastHub), you can get publish/subscribe functionality.
 
-Based on [bhavyalatha26/play-scala-slick-example](https://github.com/bhavyalatha26/play-scala-slick-example).
+## The good bit
 
-Removed some code such as:
+The flow is defined once in the controller, and used everywhere from the `chat` action:
 
-* Dependency Injection with [guice](https://github.com/google/guice)
-* Traits and implementation classes
-* Useless controllers
-* Support for i18n
-* activator
+```scala
+class HomeController extends Controller {
 
-## Getting Started
+  // chat room many clients -> merge hub -> broadcasthub -> many clients
+  private val (chatSink, chatSource) = {
 
-To run this demo using sbt:
+    // Don't log MergeHub$ProducerFailed as error if the client disconnects.
+    // recoverWithRetries -1 is essentially "recoverWith"
+    val source = MergeHub.source[WSMessage]
+      .log("source")
+      .recoverWithRetries(-1, { case _: Exception ⇒ Source.empty })
 
- * `git clone` this repository
- * Update the MySQL server url, username and password in `conf/application.conf`
- * Create a `playScalaSlickExample` database on your MySQL server.
+    val sink = BroadcastHub.sink[WSMessage]
+    source.toMat(sink)(Keep.both).run()
+  }
 
-```mysql
-    CREATE DATABASE playScalaSlickExample;
+  private val userFlow: Flow[WSMessage, WSMessage, _] = {
+    Flow[WSMessage].via(Flow.fromSinkAndSource(chatSink, chatSource)).log("userFlow")
+  }
+
+  def chat: WebSocket = {
+    WebSocket.acceptOrResult[WSMessage, WSMessage] {
+      case rh if sameOriginCheck(rh) =>
+        Future.successful(userFlow).map { flow =>
+          Right(flow)
+        }.recover {
+          case e: Exception =>
+            val msg = "Cannot create websocket"
+            logger.error(msg, e)
+            val result = InternalServerError(msg)
+            Left(result)
+        }
+
+      case rejected =>
+        logger.error(s"Request ${rejected} failed same origin check")
+        Future.successful {
+          Left(Forbidden("forbidden"))
+        }
+    }
+  }
+}
 ```
 
- * Launch the demo using `sbt run`
- * Open the Play web server at <http://localhost:9000>
- * You should be prompted to apply the evolution script. Apply the script.
- * You should now see the app running.
+## Prerequisites
+
+You will need [JDK 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) and [sbt](http://www.scala-sbt.org/) installed.
+
+## Running
+
+```
+sbt run
+```
+
+Go to http://localhost:9000 and open it in two different browsers.  Typing into one browser will cause it to show up in another browser.
+
+## Tributes
+
+This project is originally taken from Johan Andrén's [Akka-HTTP version](https://github.com/johanandren/chat-with-akka-http-websockets/tree/akka-2.4.10):
+
+Johan also has a blog post explaining dynamic streams in more detail:
+
+* http://markatta.com/codemonkey/blog/2016/10/02/chat-with-akka-http-websockets/
+

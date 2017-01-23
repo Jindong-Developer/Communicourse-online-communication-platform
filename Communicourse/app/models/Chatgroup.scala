@@ -11,9 +11,9 @@ import scala.concurrent.ExecutionContext.Implicits.global
 
 
 
-case class Chatgroup(idc: Long, group_name: String, members: String, owner: String, updated_time : String)
+case class Chatgroup(idc: Long, group_name: String, members: String, owner: String, updated_time : String, description:String)
 
-case class ChatgroupFormData(group_name: String,  owner: String,members: String )
+case class ChatgroupFormData(group_name: String,  members: String, description:String )
 
 object ChatgroupForm {
 
@@ -21,8 +21,9 @@ object ChatgroupForm {
     mapping(
       
       "group_name" -> nonEmptyText,
-      "owner" -> nonEmptyText,
-      "members" -> nonEmptyText
+      
+      "members" -> nonEmptyText,
+      "description" -> nonEmptyText
       
     )(ChatgroupFormData.apply)(ChatgroupFormData.unapply)
   )
@@ -35,10 +36,11 @@ class ChatgroupTableDef(tag: Tag) extends Table[Chatgroup](tag, "chatgroup") {
   def members = column[String]("members")
   def owner = column[String]("owner")
   def updated_time = column[String]("updated_time")
+  def description = column[String]("description")
 
 
  override def * =
-    (idc, group_name, members, owner, updated_time) <>(Chatgroup.tupled, Chatgroup.unapply)
+    (idc, group_name, members, owner, updated_time,description) <>(Chatgroup.tupled, Chatgroup.unapply)
 }
 
 
@@ -78,6 +80,8 @@ object Chatgroups {
         .update(members))
         
   }
+  
+ 
   
  
 
