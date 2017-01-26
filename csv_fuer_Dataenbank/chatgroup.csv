@@ -1,0 +1,26 @@
+idc,group_name,members,owner,updated_time,description
+1,Infor_a,",",2,time,dfgfds
+2,Math_a,",",2,time,dfgdfgs
+5,Bio_a,",",",2",time,fghjhgj
+6,Infor_b,",1,",1,time,asfgdg
+7,Bio_b,",1,",2,time,fdhfhgd
+8,Math_b,",sag@asdfa.com,aa@aa.com,ab@sdf.com,",1,time,for the students
+9,Music_a,",sag@asdfa.com,aa@aa.com,ab@sdf.com,",4,time,abcddef
+10,Infor_c,",sag@asdfa.com,aa@aa.com,ab@sdf.com,",2,time,cdef
+11,Bio_c,",sag@asdfa.com,aa@aa.com,ab@sdf.com,",1,time,sdfdsfsddgffdghjklkjhgfdsdfghjk
+12,Music_b,",sag@asdfa.com,aa@aa.com,ab@sdf.com,",3,time,asasfac
+13,Infor_d,",sag@asdfa.com,aa@aa.com,ab@sdf.com,",1,time,a
+14,Bio_d,",sag@asdfa.com,aa@aa.com,ab@sdf.com,",2,time,a
+15,Math_c,",sag@asdfa.com,aa@aa.com,ab@sdf.com,",2,time,assa
+16,Music_c,",sag@asdfa.com,aa@aa.com,ab@sdf.com,",1,time,as
+17,Exam_a,",sag@asdfa.com,aa@aa.com,ab@sdf.com,",4,time,sd
+18,Exam_b,",sag@asdfa.com,aa@aa.com,ab@sdf.com,",1,time,sasa
+19,Infor_e,",",5,time,assad
+20,Exam_c,",sag@asdfa.com,aa@aa.com,ab@sdf.com,",1,time,asdsadsadasdasdsdsad
+21,Math_e,scala.concurrent.impl.Promise$DefaultPromise@2143fd5d,5,time,asdasdasdad
+22,Exam_d,scala.concurrent.impl.Promise$DefaultPromise@64276068,5,time,as
+23,Infor_f,",sag@asdfa.com,aa@aa.com,ab@sdf.com,",4,time,ds
+24,Exam_f,",sag@asdfa.com,aa@aa.com,ab@sdf.com,",3,time,asdad
+25,Exam_e,",sag@asdfa.com,aa@aa.com,ab@sdf.com,",2,time,sad
+26,Math_d,",sag@asdfa.com,aa@aa.com,ab@sdf.com,",6,time,as
+27,Music_D,",2,6,7,",1,time,as
