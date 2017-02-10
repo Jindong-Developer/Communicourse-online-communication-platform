@@ -26,14 +26,10 @@
 	<script type="text/javascript" src="Ext/ext-all.js"></script>
 	<script type="text/javascript">Ext.BLANK_IMAGE_URL = 'images/s.gif';</script>
 	
-	<script language="javascript" src="js/js.js"></script>
+	<script language="javascript" src="js/invite.js"></script>
 	
 	<script charset="utf-8" src="kindeditor/kindeditor-min.js"></script>
     <script charset="utf-8" src="kindeditor/lang/zh_CN.js"></script>
-    <script >function inviteMember(){
-	
-	document.getElementById("centerFrame").src="invite_members.html";
-}</script>
     
     <title>Communicourse</title>
     
@@ -69,8 +65,8 @@
 	var group_member = new Ext.Panel({
 		id: 'group_member',
 		title: 'Group Memebers:',
-		height: 350,
-		width: 200,
+		height: 250,
+		width: 150,
 		border: true,
 		bodyStyle:'background:#f8fAfA',
 		
@@ -82,7 +78,7 @@
 				autoScroll:1,
 				id: 'group_members',
 				width:200,
-				height:200,
+				height:150,
 			},{
 				xtype: 'button',
 				text: 'Invite',
@@ -97,11 +93,6 @@
 			}]
 
 	});
-		
-		
-	
-	
-	
 		return group_member;  }  
          </script>  
 

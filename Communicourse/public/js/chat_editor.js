@@ -2,43 +2,37 @@ var inputForm;
 var K;
 var htmlEditor;
 
+
 Ext.onReady(function () {
 
 	Ext.QuickTips.init();
 	
 	var chat_content = new Ext.Panel({
 		id: 'chat_content',
-		height: 350,
-		width: 700,
+		height: 250,
+	    width: 600,
 		border: true,
 		bodyStyle:'background:#f8fAfA;',
+		html: '',
 	});
 	
 	var group_member = groupmembers();
 
-	var myeditor = new Ext.form.TextArea({
-		width: '800',
-		height: '150',
-		name: 'content',
-		id: 'content',
-		emptyText: 'empty',
-		anchor: '80%',
-		listeners: {
-			"render": function (f) {
-				K = KindEditor;
-				htmlEditor = K.create('#content', {
-					uploadJson: './kindeditor/upload_json.jsp',
-					fileManagerJson: './kindeditor/file_manager_json.jsp',
-					height: 200,
-					width: 700,
-					resizeType: 1,
-					allowPreviewEmoticons: true,
-					allowImageUpload: true
-				});
-			}
-		}
-	});
+	var editor = new Ext.Panel({
+    		width: '600',
+            height: '150',
+            name: 'content',
+            id: 'content',
+    		bodyStyle:'background:#f8fAfA',
+    		items:
+    			[{
+    				xtype: 'displayfield',
+    				html :'<form action="form_action.asp" method="get"><input type="file"/> </form><br><textarea id="message_send" rows="10" cols="200"></textarea>',
+    				bodyStyle:'background:#ff0000',
+                    //bodyStyle:'background-image: url("./images/doc.png")'
+    			}]
 
+    	});
 
 	var buttonPanel = new Ext.Panel({
 		id: 'buttonPanel',
@@ -53,7 +47,9 @@ Ext.onReady(function () {
 				height:30,
 				name: 'finsh',
 				handler: function () {
-					Ext.Msg.alert('', htmlEditor.html());	   
+				    var chatContent=Ext.getCmp('chat_content');
+					chatContent.body.update(document.getElementById('message_send').value);
+					document.getElementById('message_send').value='';
 				}
 			}
 	});
@@ -75,25 +71,21 @@ Ext.onReady(function () {
 		items: [{  
                     columnWidth: 1,
 			        baseCls:'x-plain',
-					height: 355,
-		            width: 720,
-			        bodyStyle:'padding:5px 0 0px 20px',
+			        bodyStyle:'padding:5px 3px 0px 10px',
                     items:[chat_content]  
                 },{  
                     columnWidth: 1,
-					height: 350,
-		            width: 200,
-                    bodyStyle:'padding:1px',  
+                    bodyStyle:'padding:5px 0px 0px 0px',
                     items:[group_member]  
                 },{  
-                    columnWidth: 1,  
+                    columnWidth: 1,
                     baseCls:'x-plain',  
-                    bodyStyle:'padding:0px 0 0px 20px',  
-                    items:[myeditor]  
+                    bodyStyle:'padding:0px 0 0px 10px',
+                    items:[editor]
                 },{  
                     columnWidth: 1,  
                     baseCls:'x-plain',  
-                    bodyStyle:'padding:1px',  
+                    bodyStyle:'padding:3px',
                     items:[buttonPanel]  
                 }]
 	});

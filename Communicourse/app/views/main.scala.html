@@ -1,7 +1,5 @@
 @(chatgroupForm: Form[model.ChatgroupFormData],chatgroupso : Seq[model.Chatgroup],chatgroupsm : Seq[model.Chatgroup],a:Int)
 
-
-
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
@@ -28,7 +26,7 @@
 	<script type="text/javascript">Ext.BLANK_IMAGE_URL = 'images/s.gif';</script>
 	<link rel="stylesheet" type="text/css" href="stylesheets/messages.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/style.css"/>
-    <title>Communicourse @a</title>  
+    <title>Communicourse</title>  
     <script language="javascript">
 		
 		function chatGroups(){
@@ -37,9 +35,6 @@
 		collapsible :false,
         text:"root1",
        });
-
-    
-  
 	//for(i;i<@a;i++)
 	@for(group <- chatgroupso){
 	
@@ -68,12 +63,7 @@
 
 
 }
-	
-		
-		
-	
-	
-	
+
 		return chatGroups_root;  }  
          </script>  
 </head>
