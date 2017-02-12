@@ -1,3 +1,9 @@
+function logout() {
+	var domain=document.URL;
+    var domains=domain.split("/");
+    var domain2=domains[0]+"//"+domains[2];  
+    window.location.href=domain2;
+}
 
 //生成标签页
 var tab = new Ext.TabPanel({
@@ -233,16 +239,7 @@ Ext.onReady(function() {
         listeners:{
             'click':function(node, event) {
                 event.stopEvent();
-                var n = tab.getComponent(node.id);
-                var url = 'setting_log_out.html';
-                if (!n) { //if the pannel is already opened.
-                    n = actionFn(node, url);
-                } else {
-                    tab.remove(n);
-                    n = tab.getComponent(node.id);
-                    n = actionFn(node, url);
-                }
-                tab.setActiveTab(n);
+				logout();		           
             }
         }
     });

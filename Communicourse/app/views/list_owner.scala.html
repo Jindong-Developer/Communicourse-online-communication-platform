@@ -16,6 +16,7 @@
     <tr>
       <th style="padding:0 0 0 0; width: 15%; text-transform:none;">Group Name:</th>
       <th style="padding:0 0 0 0; width: 33%; text-transform:none;">Group Description:</th>
+      <th style="padding:0 0 0 0; width: 20%; text-transform:none;">Invite new Memebrs:</th>
       <th style="padding:0 0 0 0; width: 17%; text-transform:none;">Group Operation:</th>
     </tr>
     
@@ -23,6 +24,7 @@
     <tr>
       <td style="text-align:left;">@chatgroup.group_name</td>
       <td style="text-align:left;">@chatgroup.description</td>
+      <td style="text-align:left;"><button onclick="inviteMember(@chatgroup.idc)" style="width: 80px;background-color: gold;">Invite</button></td>
       <td style="text-align:left;">
           <a href="@routes.ChatgroupController.deleteChatgroup(chatgroup.idc)">Delete</a>
       </td>

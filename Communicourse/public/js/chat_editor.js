@@ -6,19 +6,20 @@ var htmlEditor;
 Ext.onReady(function () {
 
 	Ext.QuickTips.init();
-	
+
 	var chat_content = new Ext.Panel({
-		id: 'chat_content',
-		height: 250,
-	    width: 600,
-		border: true,
-		bodyStyle:'background:#f8fAfA;',
-		html: '',
-	});
-	
+                       		id: 'chat_content',
+                       		height: 250,
+                       	    width: 600,
+                       		border: true,
+                       		autoScroll: true,
+                       		bodyStyle:'background:#f8fAfA;',
+                       		html: '',
+                            	});
+
 	var group_member = groupmembers();
 
-	var editor = new Ext.Panel({
+	var editor =new Ext.Panel({
     		width: '600',
             height: '150',
             name: 'content',
@@ -27,13 +28,13 @@ Ext.onReady(function () {
     		items:
     			[{
     				xtype: 'displayfield',
-    				html :'<form action="form_action.asp" method="get"><input type="file"/> </form><br><textarea id="message_send" rows="10" cols="200"></textarea>',
-    				bodyStyle:'background:#ff0000',
+        		    html:"<iframe name='uframe' id='uframe' frameborder='0' border='0' width='100%' height='100%' src='upload.html'></iframe>",
+        		    bodyStyle:'background:#ff0000',
                     //bodyStyle:'background-image: url("./images/doc.png")'
     			}]
 
     	});
-
+	
 	var buttonPanel = new Ext.Panel({
 		id: 'buttonPanel',
 		height: 50,
@@ -47,9 +48,11 @@ Ext.onReady(function () {
 				height:30,
 				name: 'finsh',
 				handler: function () {
-				    var chatContent=Ext.getCmp('chat_content');
-					chatContent.body.update(document.getElementById('message_send').value);
-					document.getElementById('message_send').value='';
+					var text=document.getElementById('uframe').contentWindow.document.getElementById('message_send');
+					text.value='';
+					showMessage();
+                    sendmessage("txt", text);
+
 				}
 			}
 	});

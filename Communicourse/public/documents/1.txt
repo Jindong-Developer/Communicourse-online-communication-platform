@@ -1,0 +1,18 @@
+1.If ( $_POST[¡®submit¡¯] ) is wrong
+  The right answer is:
+  If ( $_post[¡®email¡¯] && $_POST[¡®password¡¯])
+
+
+2.There are some mistakes in <form>
+  The right answer is:
+  <form action="login.php" method="post">
+    <label>
+       Email: <input type="text" name="email"> 
+    </label>
+    <label>
+       Password: <input type="password" name="password">
+    </label>
+    <label>
+  	<input type="submit" name="submit" />
+    </label>
+  </form>

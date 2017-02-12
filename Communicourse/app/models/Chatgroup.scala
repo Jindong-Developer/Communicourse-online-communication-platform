@@ -74,12 +74,14 @@ object Chatgroups {
     dbConfig.db.run(chatgroups.filter(_.idc === idc).result)
   }
   
-  def update_chatgroup(idc:String, members:String): Future[Int] = {
+  def update_chatgroup_members(idc:String, members:String): Future[Int] = {
  
     dbConfig.db.run(chatgroups.filter(_.idc === idc.toLong).map(p => (p.members))
         .update(members))
         
   }
+  
+    
   
  
   

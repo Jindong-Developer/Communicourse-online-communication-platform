@@ -13,16 +13,16 @@ import scala.concurrent.ExecutionContext.Implicits.global
 
 case class Message(idm: Long, typee: String, content: String, chat_group: Long, user: String, created_time : String)
 
-case class MessageFormData(content: String,  chat_group: Int ,user: String )
+case class MessageFormData(content: String  )
 
 object MessageForm {
 
   val form = Form(
     mapping(
       
-      "content" -> nonEmptyText,
-      "chat_group" -> number,
-      "user" -> nonEmptyText
+      "content" -> nonEmptyText
+      
+
       
     )(MessageFormData.apply)(MessageFormData.unapply)
   )
@@ -69,6 +69,8 @@ object Messages {
   def listSome(idm:Long): Future[Seq[Message]] = {
     dbConfig.db.run(messages.filter(_.idm === idm).result)
   }
+  
+ 
   
  
   

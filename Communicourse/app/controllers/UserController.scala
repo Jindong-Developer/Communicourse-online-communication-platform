@@ -45,7 +45,7 @@ class UserController extends Controller {
         Ok("Password or Username Wrong!")
       else
         Redirect(routes.ChatgroupController.list_members_owner(users.head.userName))
-          .withSession("userid"->users.head.id.toString)
+          .withSession( "userid"->users.head.id.toString )
           
       }
     

@@ -1,8 +1,8 @@
-@(messageForm: Form[model.MessageFormData],message : Seq[model.Message],content:String)(implicit request: RequestHeader)
+@(messageForm: Form[model.MessageFormData],message : Seq[model.Message],new_content:String)(implicit request: RequestHeader)
 
 
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!--DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"-->
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <!-- HTTP 1.1 -->
 	<meta http-equiv="Cache-Control" content="no-store"/>
@@ -25,36 +25,21 @@
 	<script type="text/javascript" src="Ext/adapter/ext/ext-base.js"></script>
 	<script type="text/javascript" src="Ext/ext-all.js"></script>
 	<script type="text/javascript">Ext.BLANK_IMAGE_URL = 'images/s.gif';</script>
-	
 	<script language="javascript" src="js/invite.js"></script>
-	
-	<script charset="utf-8" src="kindeditor/kindeditor-min.js"></script>
-    <script charset="utf-8" src="kindeditor/lang/zh_CN.js"></script>
-    
     <title>Communicourse</title>
     
 </head>
 <body>
- <script language="javascript">
-                var url = '@content.split('|')(2)'
-                var connection = new WebSocket(url);
 
-               
-
-                connection.onopen = function () {
-                    alert('Success in Chatroom');
-                };
-                
-        </script>
         
         
  <script language="javascript">
 		
 		function groupmembers(){
 
-	var allmembers='@content.split('|')(1)';
+	var allmembers='@new_content.split('|')(1)';
 	var members=allmembers.split(";");
-	//var members='@content.split('|')(1).split(';')';
+	//var members='@new_content.split('|')(1).split(';')';
 	var member='';
 	for(var i=0;i<members.length;i++){
 	   
@@ -95,9 +80,70 @@
 	});
 		return group_member;  }  
          </script>  
+         
+         <script language="javascript">
+        //specify the content of chat pannel. Currently invoked by send Button. you can use it anywhere.
+        function showMessage(){
+          var message1='<div style="text-align:left;">user2:&nbsp;<span style="background-color:#50dd30;">bla bla bla...&nbsp;</span></div>';
+          var message2='<div style="text-align:right;"><span style="background-color:#50dd30;">&nbsp;bla bla bla...</span>&nbsp;:me</div>';
+          var message3='<div style="text-align:right;"><span><a href="url"><img width="40" height="40" src="img/chi.png"/></a></span>&nbsp;:me</div>';
+          var message4='<div style="text-align:left;"><span height="30" style="vertical-align:middle;">user3:&nbsp;<span style="background-color:#50dd30;"><a href="url"><img width="30" height="30" src="images/doc.png"/>document path&nbsp;</a></span></span></div>';
+         
+          var chatContent=message1+message2+message3+message4;
+          Ext.getCmp('chat_content').body.update(chatContent);
+                              
+        }
+    
+          </script>
+         
+        
+      
+        <script language="javascript">
+                var url = '@new_content.split('|')(2)';
+                              
+                var connection = new WebSocket(url);
 
+                connection.onopen = function () {
+                    alert('Success in Chatroom');
+                };
+                
+                function sendmessage(mytype,text){
+          
+                    if(mytype == "doc"){
+                            ;
+                    }
+                    
+                     username='@new_content.split('|')(3)';
+                    connection.send(username+":"+text+"|"+mytype);
+                    alert(username+":"+text+"信息已发送");
+                  
+                }
 
+                 connection.onmessage = function (event) {
+                   // var content=event.data.toString().split("|")(0);
+                    //var mtype=event.data.toString().split("|")(1);
+                    //if(mtype=="text")
+                       document.getElementById('messages').value=event.data;
+                    //if(mtype=="doc")
+                      // document.getElementById('messages').value=content.split(":")(0);
+                }
+        </script>
 
-      <script type="text/javascript" src="js/chat_editor.js"></script>
+        <script language="javascript">
+    
+        //used to get information about the group
+         function getGroupInforamtion(){
+             var groupInforamtion= "@new_content.split('|')(0)";
+             return groupInforamtion;
+         }
+         </script>
+         
+         
+         
+         <script language="javascript" src="js/chat_editor.js"></script>
+         
+         
+       
+        
 </body>
 </html>

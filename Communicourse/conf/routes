@@ -3,9 +3,6 @@
 # ~~~~
 
 # An example controller showing a sample home page
-#GET     /                           controllers.HomeController.index
-#GET     /1                      controllers.HomeController.chhat
-#GET     /2                       controllers.HomeController.chhhat
 GET     /socket/:index                 controllers.WebSocketController.socket(index:String)
 
 # Home page
@@ -27,18 +24,21 @@ GET     /inpassword                controllers.UserController.in_password
 GET     /list_owner                controllers.ChatgroupController.list_owner
 GET     /createChatgroup/:content                controllers.ChatgroupController.createChatgroup(content:String)
 GET     /list_members_owner/:username                controllers.ChatgroupController.list_members_owner(username:String)
+GET     /updatechatgroup_members/:content                controllers.ChatgroupController.updatechatgroup_members(content:String)
+GET     /updatechatgroup_members_processdata/:content                controllers.ChatgroupController.updatechatgroup_members_processdata(content:String)
+GET     /getchatgroup_members/:content                controllers.ChatgroupController.getchatgroup_members(content:String)
 
 
 GET     /list_members                controllers.ChatgroupController.list_members
 GET     /goto_createchatgroup                controllers.ChatgroupController.goto_createchatgroup
-POST    /addMessage_text                    controllers.MessageController.addMessage_text
-#POST    /addMessage_file/:chat_group                  controllers.MessageController.addMessage_file(chat_group :String)
+POST    /addMessage_text                 controllers.MessageController.addMessage_text
+POST    /addMessage_file/:chat_group                  controllers.MessageController.addMessage_file(chat_group :String)
 #GET     /listAllMessage                      controllers.MessageController.listAll
 #GET     /download_file/:file_name                    controllers.MessageController.download_file(file_name :String)
 GET      /list_message/:idc                controllers.MessageController.listAll(idc:String)
 GET      /getChatgroup/:idc              controllers.ChatgroupController.getChatgroup(idc:String)
 GET      /getUsers_nameandidentifi/:content              controllers.UserController.getUsers_nameandidentifi(content:String)
-
+GET     /testhttp                controllers.ChatgroupController.testhttp
 
 
 # Map static resources from the /public folder to the /assets URL path

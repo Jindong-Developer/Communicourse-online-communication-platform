@@ -22,8 +22,8 @@ object ChatgroupService {
     Chatgroups.listAll
   }
   
-  def update_chatgroup(idc:String, members:String): Future[Int] = {
-    Chatgroups.update_chatgroup(idc,members)
+  def update_chatgroup_members(idc:String, members:String): Future[Int] = {
+    Chatgroups.update_chatgroup_members(idc,members)
   }
   
 }

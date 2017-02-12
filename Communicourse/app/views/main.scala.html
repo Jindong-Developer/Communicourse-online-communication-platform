@@ -1,4 +1,4 @@
-@(chatgroupForm: Form[model.ChatgroupFormData],chatgroupso : Seq[model.Chatgroup],chatgroupsm : Seq[model.Chatgroup],a:Int)
+@(chatgroupForm: Form[model.ChatgroupFormData],chatgroupso : Seq[model.Chatgroup],chatgroupsm : Seq[model.Chatgroup],a:Int,mn:Int)
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
@@ -60,6 +60,35 @@
             }
         }
     }));
+    
+
+
+}
+    @for(group <- chatgroupsm){
+	
+	//	var name='@chatgroupso.apply(1).group_name';
+		//var name=name.replace('?',i);
+		chatGroups_root.appendChild(new Ext.tree.TreeNode({
+        id: '@group.idc',
+        icon:'images/user.gif',
+        text:'@group.group_name',
+        listeners:{
+            'click':function(node, event) {
+                event.stopEvent();
+                var n = tab.getComponent(node.id);
+                var url = 'getChatgroup/@group.idc';
+                if (!n) { //判断是否已经打开该面板
+                    n = actionFn(node, url);
+                } else {
+                    tab.remove(n);
+                    n = tab.getComponent(node.id);
+                    n = actionFn(node, url);
+                }
+                tab.setActiveTab(n);
+            }
+        }
+    }));
+    
 
 
 }

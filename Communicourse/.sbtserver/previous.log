@@ -1,5 +1,5 @@
-New log file opened at Fri Feb 10 23:00:15 CET 2017 by 58496@Jindongs-MacBook-Pro.local
-jvm 58496@Jindongs-MacBook-Pro.local
+New log file opened at Sun Feb 12 11:41:16 CET 2017 by 21585@Jindongs-MacBook-Pro.local
+jvm 21585@Jindongs-MacBook-Pro.local
 jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.111-b14
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in /Users/ostdong/Communicourse/Communicourse/project, returning: (communicourse-build)
 Loading project definition from /Users/ostdong/Communicourse/Communicourse/project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@91b46c1, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@456b3e79, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -69,54 +69,7 @@ Set current project to play-chatroom-scala (in build file:/Users/ostdong/Communi
 > server-handle-next-server-request
 > compile
 Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@4ab22a0b, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/twirl/main/views/html/list_members.template.scala, /Users/ostdong/Communicourse/Communicourse/target/scala-2.11/twirl/main/views/html/list_owner.template.scala)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/twirl/main/views/html/list_members.template.scala, /Users/ostdong/Communicourse/Communicourse/target/scala-2.11/twirl/main/views/html/list_owner.template.scala)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/twirl/main/views/html/list_members.template.scala, /Users/ostdong/Communicourse/Communicourse/target/scala-2.11/twirl/main/views/html/list_owner.template.scala)
-
-Read from stdout: Compiling 2 Scala sources to /Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes...
-Compiling 2 Scala sources to /Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes...
-Getting compiler-interface from component compiler for Scala 2.11.8
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.8
-Other repositories:
-Default repositories:
-Running cached compiler 374013c, interfacing (CompilerInterface) with Scala compiler version 2.11.8
-Calling Scala compiler with arguments  (CompilerInterface):
-	-deprecation
-	-unchecked
-	-encoding
-	utf8
-	-bootclasspath
-	/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/classes:/Users/ostdong/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar
-	-classpath
-	/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.apache.commons/commons-lang3/3.4/jars/commons-lang3.jar:/Users/ostdong/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe/config/1.3.0/bundles/config.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.9.6.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.joda/joda-convert/1.8.1/jars/joda-convert.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.scala-lang/scala-reflect/2.11.7/jars/scala-reflect.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/bundles/jackson-datatype-jdk8-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/bundles/jackson-datatype-jsr310-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.slf4j/slf4j-api/1.7.21/jars/slf4j-api.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.slf4j/jul-to-slf4j/1.7.21/jars/jul-to-slf4j.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.slf4j/jcl-over-slf4j/1.7.21/jars/jcl-over-slf4j.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-streams_2.11/jars/play-streams_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.reactivestreams/reactive-streams/1.0.0/jars/reactive-streams.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-stream_2.11/jars/akka-stream_2.11-2.4.12.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.4.12.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.scala-lang.modules/scala-java8-compat_2.11/0.7.0/bundles/scala-java8-compat_2.11.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe/ssl-config-core_2.11/0.2.1/bundles/ssl-config-core_2.11.jar:/Users/ostdong/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.4.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.4.12.jar:/Users/ostdong/activator-dist-1.3.12/repository/commons-codec/commons-codec/1.10/jars/commons-codec.jar:/Users/ostdong/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/ostdong/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/ostdong/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.google.inject/guice/4.0/jars/guice.jar:/Users/ostdong/activator-dist-1.3.12/repository/javax.inject/javax.inject/1/jars/javax.inject.jar:/Users/ostdong/activator-dist-1.3.12/repository/aopalliance/aopalliance/1.0/jars/aopalliance.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.google.inject.extensions/guice-assistedinject/4.0/jars/guice-assistedinject.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe.netty/netty-reactive-streams-http/1.0.8/jars/netty-reactive-streams-http.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe.netty/netty-reactive-streams/1.0.8/jars/netty-reactive-streams.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-handler/4.0.41.Final/jars/netty-handler.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-buffer/4.0.41.Final/jars/netty-buffer.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-common/4.0.41.Final/jars/netty-common.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-transport/4.0.41.Final/jars/netty-transport.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-codec/4.0.41.Final/jars/netty-codec.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-codec-http/4.0.41.Final/jars/netty-codec-http.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-transport-native-epoll/4.0.41.Final/jars/netty-transport-native-epoll-linux-x86_64.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-logback_2.11/jars/play-logback_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/ch.qos.logback/logback-classic/1.1.7/jars/logback-classic.jar:/Users/ostdong/activator-dist-1.3.12/repository/ch.qos.logback/logback-core/1.1.7/jars/logback-core.jar:/Users/ostdong/.ivy2/cache/org.webjars/flot/jars/flot-0.8.3.jar:/Users/ostdong/.ivy2/cache/org.webjars/jquery/jars/jquery-1.11.1.jar:/Users/ostdong/.ivy2/cache/org.webjars/explorercanvas/jars/explorercanvas-r3-1.jar:/Users/ostdong/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.3.6.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-http-core_2.11/jars/akka-http-core_2.11-2.4.11.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-parsing_2.11/jars/akka-parsing_2.11-2.4.11.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-http-experimental_2.11/jars/akka-http-experimental_2.11-2.4.11.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/net.sf.ehcache/ehcache-core/2.6.11/jars/ehcache-core.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.google.guava/guava/19.0/bundles/guava.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.asynchttpclient/async-http-client/2.0.11/jars/async-http-client.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.asynchttpclient/netty-resolver-dns/2.0.11/jars/netty-resolver-dns.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.asynchttpclient/netty-resolver/2.0.11/jars/netty-resolver.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.asynchttpclient/netty-codec-dns/2.0.11/jars/netty-codec-dns.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.javassist/javassist/3.20.0-GA/bundles/javassist.jar:/Users/ostdong/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/ostdong/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/Users/ostdong/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/ostdong/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-5.1.34.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-slick_2.11/jars/play-slick_2.11-2.0.0.jar:/Users/ostdong/.ivy2/cache/com.typesafe.slick/slick_2.11/bundles/slick_2.11-3.1.0.jar:/Users/ostdong/.ivy2/cache/com.typesafe.slick/slick-hikaricp_2.11/bundles/slick-hikaricp_2.11-3.1.0.jar:/Users/ostdong/.ivy2/cache/com.zaxxer/HikariCP-java6/bundles/HikariCP-java6-2.3.7.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.5.0.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-slick-evolutions_2.11/jars/play-slick-evolutions_2.11-2.0.0.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-jdbc-evolutions_2.11/jars/play-jdbc-evolutions_2.11-2.5.0.jar
-Scala compilation took 4.692288403 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 7 s, completed Feb 10, 2017 11:00:28 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/Users/ostdong/Communicourse/Communicourse/}root/compile:discoveredMainClasses
-Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@39787a48, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@284cbae7, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -133,18 +86,40 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
-Total time: 1 s, completed Feb 10, 2017 11:00:29 PM
+Total time: 2 s, completed Feb 12, 2017 11:41:25 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/ostdong/Communicourse/Communicourse/}root/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@ac82384, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 1 s, completed Feb 12, 2017 11:41:26 AM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/ostdong/Communicourse/Communicourse/}root/compile:mainClass
 Evaluating tasks: compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@5c24b289, check cycles: false
-Total time: 0 s, completed Feb 10, 2017 11:00:29 PM
+Running task... Cancel: sbt.server.ServerTaskCancellation@7a8b3c7a, check cycles: false
+Total time: 0 s, completed Feb 12, 2017 11:41:26 AM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/ostdong/Communicourse/Communicourse/}root/compile:discoveredMainClasses
 Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@1cca152d, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@31e764fe, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -161,30 +136,453 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
-Total time: 1 s, completed Feb 10, 2017 11:00:30 PM
+Total time: 1 s, completed Feb 12, 2017 11:41:26 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@73661d80, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/ostdong/Communicourse/Communicourse/app/controllers/ChatgroupController.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/ostdong/Communicourse/Communicourse/app/controllers/ChatgroupController.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/ostdong/Communicourse/Communicourse/app/controllers/ChatgroupController.scala)
+
+Read from stdout: Compiling 1 Scala source to /Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes...
+Compiling 1 Scala source to /Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.8
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.8
+Other repositories:
+Default repositories:
+Running cached compiler 1577817, interfacing (CompilerInterface) with Scala compiler version 2.11.8
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/classes:/Users/ostdong/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar
+	-classpath
+	/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.apache.commons/commons-lang3/3.4/jars/commons-lang3.jar:/Users/ostdong/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe/config/1.3.0/bundles/config.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.9.6.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.joda/joda-convert/1.8.1/jars/joda-convert.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.scala-lang/scala-reflect/2.11.7/jars/scala-reflect.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/bundles/jackson-datatype-jdk8-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/bundles/jackson-datatype-jsr310-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.slf4j/slf4j-api/1.7.21/jars/slf4j-api.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.slf4j/jul-to-slf4j/1.7.21/jars/jul-to-slf4j.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.slf4j/jcl-over-slf4j/1.7.21/jars/jcl-over-slf4j.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-streams_2.11/jars/play-streams_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.reactivestreams/reactive-streams/1.0.0/jars/reactive-streams.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-stream_2.11/jars/akka-stream_2.11-2.4.12.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.4.12.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.scala-lang.modules/scala-java8-compat_2.11/0.7.0/bundles/scala-java8-compat_2.11.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe/ssl-config-core_2.11/0.2.1/bundles/ssl-config-core_2.11.jar:/Users/ostdong/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.4.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.4.12.jar:/Users/ostdong/activator-dist-1.3.12/repository/commons-codec/commons-codec/1.10/jars/commons-codec.jar:/Users/ostdong/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/ostdong/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/ostdong/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.google.inject/guice/4.0/jars/guice.jar:/Users/ostdong/activator-dist-1.3.12/repository/javax.inject/javax.inject/1/jars/javax.inject.jar:/Users/ostdong/activator-dist-1.3.12/repository/aopalliance/aopalliance/1.0/jars/aopalliance.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.google.inject.extensions/guice-assistedinject/4.0/jars/guice-assistedinject.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe.netty/netty-reactive-streams-http/1.0.8/jars/netty-reactive-streams-http.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe.netty/netty-reactive-streams/1.0.8/jars/netty-reactive-streams.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-handler/4.0.41.Final/jars/netty-handler.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-buffer/4.0.41.Final/jars/netty-buffer.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-common/4.0.41.Final/jars/netty-common.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-transport/4.0.41.Final/jars/netty-transport.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-codec/4.0.41.Final/jars/netty-codec.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-codec-http/4.0.41.Final/jars/netty-codec-http.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-transport-native-epoll/4.0.41.Final/jars/netty-transport-native-epoll-linux-x86_64.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-logback_2.11/jars/play-logback_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/ch.qos.logback/logback-classic/1.1.7/jars/logback-classic.jar:/Users/ostdong/activator-dist-1.3.12/repository/ch.qos.logback/logback-core/1.1.7/jars/logback-core.jar:/Users/ostdong/.ivy2/cache/org.webjars/flot/jars/flot-0.8.3.jar:/Users/ostdong/.ivy2/cache/org.webjars/jquery/jars/jquery-1.11.1.jar:/Users/ostdong/.ivy2/cache/org.webjars/explorercanvas/jars/explorercanvas-r3-1.jar:/Users/ostdong/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.3.6.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-http-core_2.11/jars/akka-http-core_2.11-2.4.11.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-parsing_2.11/jars/akka-parsing_2.11-2.4.11.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-http-experimental_2.11/jars/akka-http-experimental_2.11-2.4.11.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/net.sf.ehcache/ehcache-core/2.6.11/jars/ehcache-core.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.google.guava/guava/19.0/bundles/guava.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.asynchttpclient/async-http-client/2.0.11/jars/async-http-client.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.asynchttpclient/netty-resolver-dns/2.0.11/jars/netty-resolver-dns.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.asynchttpclient/netty-resolver/2.0.11/jars/netty-resolver.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.asynchttpclient/netty-codec-dns/2.0.11/jars/netty-codec-dns.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.javassist/javassist/3.20.0-GA/bundles/javassist.jar:/Users/ostdong/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/ostdong/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/Users/ostdong/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/ostdong/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-5.1.34.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-slick_2.11/jars/play-slick_2.11-2.0.0.jar:/Users/ostdong/.ivy2/cache/com.typesafe.slick/slick_2.11/bundles/slick_2.11-3.1.0.jar:/Users/ostdong/.ivy2/cache/com.typesafe.slick/slick-hikaricp_2.11/bundles/slick-hikaricp_2.11-3.1.0.jar:/Users/ostdong/.ivy2/cache/com.zaxxer/HikariCP-java6/bundles/HikariCP-java6-2.3.7.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.5.0.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-slick-evolutions_2.11/jars/play-slick-evolutions_2.11-2.0.0.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-jdbc-evolutions_2.11/jars/play-jdbc-evolutions_2.11-2.5.0.jar
+Read from stdout: /Users/ostdong/Communicourse/Communicourse/app/controllers/ChatgroupController.scala:39: type mismatch;
+Read from stdout: found   : Unit
+Read from stdout: required: play.api.mvc.Result
+/Users/ostdong/Communicourse/Communicourse/app/controllers/ChatgroupController.scala:39: type mismatch;
+ found   : Unit
+ required: play.api.mvc.Result
+Read from stdout: }
+     }
+Read from stdout: ^
+     ^
+Read from stdout: one error found
+one error found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 4 s, completed Feb 12, 2017 11:41:51 AM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@3b2a726d, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/ostdong/Communicourse/Communicourse/app/controllers/ChatgroupController.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/ostdong/Communicourse/Communicourse/app/controllers/ChatgroupController.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/ostdong/Communicourse/Communicourse/app/controllers/ChatgroupController.scala)
+
+Read from stdout: Compiling 1 Scala source to /Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes...
+Compiling 1 Scala source to /Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.8
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.8
+Other repositories:
+Default repositories:
+Running cached compiler 2de6fd2c, interfacing (CompilerInterface) with Scala compiler version 2.11.8
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/classes:/Users/ostdong/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar
+	-classpath
+	/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.apache.commons/commons-lang3/3.4/jars/commons-lang3.jar:/Users/ostdong/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe/config/1.3.0/bundles/config.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.9.6.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.joda/joda-convert/1.8.1/jars/joda-convert.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.scala-lang/scala-reflect/2.11.7/jars/scala-reflect.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/bundles/jackson-datatype-jdk8-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/bundles/jackson-datatype-jsr310-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.slf4j/slf4j-api/1.7.21/jars/slf4j-api.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.slf4j/jul-to-slf4j/1.7.21/jars/jul-to-slf4j.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.slf4j/jcl-over-slf4j/1.7.21/jars/jcl-over-slf4j.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-streams_2.11/jars/play-streams_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.reactivestreams/reactive-streams/1.0.0/jars/reactive-streams.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-stream_2.11/jars/akka-stream_2.11-2.4.12.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.4.12.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.scala-lang.modules/scala-java8-compat_2.11/0.7.0/bundles/scala-java8-compat_2.11.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe/ssl-config-core_2.11/0.2.1/bundles/ssl-config-core_2.11.jar:/Users/ostdong/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.4.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.4.12.jar:/Users/ostdong/activator-dist-1.3.12/repository/commons-codec/commons-codec/1.10/jars/commons-codec.jar:/Users/ostdong/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/ostdong/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/ostdong/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.google.inject/guice/4.0/jars/guice.jar:/Users/ostdong/activator-dist-1.3.12/repository/javax.inject/javax.inject/1/jars/javax.inject.jar:/Users/ostdong/activator-dist-1.3.12/repository/aopalliance/aopalliance/1.0/jars/aopalliance.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.google.inject.extensions/guice-assistedinject/4.0/jars/guice-assistedinject.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe.netty/netty-reactive-streams-http/1.0.8/jars/netty-reactive-streams-http.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe.netty/netty-reactive-streams/1.0.8/jars/netty-reactive-streams.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-handler/4.0.41.Final/jars/netty-handler.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-buffer/4.0.41.Final/jars/netty-buffer.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-common/4.0.41.Final/jars/netty-common.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-transport/4.0.41.Final/jars/netty-transport.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-codec/4.0.41.Final/jars/netty-codec.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-codec-http/4.0.41.Final/jars/netty-codec-http.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-transport-native-epoll/4.0.41.Final/jars/netty-transport-native-epoll-linux-x86_64.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-logback_2.11/jars/play-logback_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/ch.qos.logback/logback-classic/1.1.7/jars/logback-classic.jar:/Users/ostdong/activator-dist-1.3.12/repository/ch.qos.logback/logback-core/1.1.7/jars/logback-core.jar:/Users/ostdong/.ivy2/cache/org.webjars/flot/jars/flot-0.8.3.jar:/Users/ostdong/.ivy2/cache/org.webjars/jquery/jars/jquery-1.11.1.jar:/Users/ostdong/.ivy2/cache/org.webjars/explorercanvas/jars/explorercanvas-r3-1.jar:/Users/ostdong/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.3.6.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-http-core_2.11/jars/akka-http-core_2.11-2.4.11.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-parsing_2.11/jars/akka-parsing_2.11-2.4.11.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-http-experimental_2.11/jars/akka-http-experimental_2.11-2.4.11.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/net.sf.ehcache/ehcache-core/2.6.11/jars/ehcache-core.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.google.guava/guava/19.0/bundles/guava.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.asynchttpclient/async-http-client/2.0.11/jars/async-http-client.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.asynchttpclient/netty-resolver-dns/2.0.11/jars/netty-resolver-dns.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.asynchttpclient/netty-resolver/2.0.11/jars/netty-resolver.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.asynchttpclient/netty-codec-dns/2.0.11/jars/netty-codec-dns.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.javassist/javassist/3.20.0-GA/bundles/javassist.jar:/Users/ostdong/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/ostdong/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/Users/ostdong/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/ostdong/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-5.1.34.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-slick_2.11/jars/play-slick_2.11-2.0.0.jar:/Users/ostdong/.ivy2/cache/com.typesafe.slick/slick_2.11/bundles/slick_2.11-3.1.0.jar:/Users/ostdong/.ivy2/cache/com.typesafe.slick/slick-hikaricp_2.11/bundles/slick-hikaricp_2.11-3.1.0.jar:/Users/ostdong/.ivy2/cache/com.zaxxer/HikariCP-java6/bundles/HikariCP-java6-2.3.7.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.5.0.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-slick-evolutions_2.11/jars/play-slick-evolutions_2.11-2.0.0.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-jdbc-evolutions_2.11/jars/play-jdbc-evolutions_2.11-2.5.0.jar
+Read from stdout: /Users/ostdong/Communicourse/Communicourse/app/controllers/ChatgroupController.scala:23: missing parameter type
+/Users/ostdong/Communicourse/Communicourse/app/controllers/ChatgroupController.scala:23: missing parameter type
+Read from stdout: implicit request =>
+      implicit request =>
+Read from stdout: ^
+               ^
+Read from stdout: /Users/ostdong/Communicourse/Communicourse/app/controllers/ChatgroupController.scala:25: Cannot find any HTTP Request here
+/Users/ostdong/Communicourse/Communicourse/app/controllers/ChatgroupController.scala:25: Cannot find any HTTP Request here
+Read from stdout: val groupname=ChatgroupForm.form.bindFromRequest.get.group_name
+    val groupname=ChatgroupForm.form.bindFromRequest.get.group_name
+Read from stdout: ^
+                                     ^
+Read from stdout: /Users/ostdong/Communicourse/Communicourse/app/controllers/ChatgroupController.scala:27: Cannot find any HTTP Request here
+/Users/ostdong/Communicourse/Communicourse/app/controllers/ChatgroupController.scala:27: Cannot find any HTTP Request here
+Read from stdout: val description=  ChatgroupForm.form.bindFromRequest.get.description
+    val description=  ChatgroupForm.form.bindFromRequest.get.description
+Read from stdout: ^
+                                         ^
+Read from stdout: /Users/ostdong/Communicourse/Communicourse/app/controllers/ChatgroupController.scala:28: Cannot find any HTTP Request here
+/Users/ostdong/Communicourse/Communicourse/app/controllers/ChatgroupController.scala:28: Cannot find any HTTP Request here
+Read from stdout: var members = ChatgroupForm.form.bindFromRequest.get.members
+    var members = ChatgroupForm.form.bindFromRequest.get.members
+Read from stdout: ^
+                                     ^
+Read from stdout: four errors found
+four errors found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 2 s, completed Feb 12, 2017 11:42:10 AM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@27cb431d, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 0 s, completed Feb 12, 2017 11:42:22 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@4bcce90e, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/ostdong/Communicourse/Communicourse/app/controllers/ChatgroupController.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/ostdong/Communicourse/Communicourse/app/controllers/ChatgroupController.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/ostdong/Communicourse/Communicourse/app/controllers/ChatgroupController.scala)
+
+Read from stdout: Compiling 1 Scala source to /Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes...
+Compiling 1 Scala source to /Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.8
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.8
+Other repositories:
+Default repositories:
+Running cached compiler 3f5cf60, interfacing (CompilerInterface) with Scala compiler version 2.11.8
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/classes:/Users/ostdong/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar
+	-classpath
+	/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.apache.commons/commons-lang3/3.4/jars/commons-lang3.jar:/Users/ostdong/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe/config/1.3.0/bundles/config.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.9.6.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.joda/joda-convert/1.8.1/jars/joda-convert.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.scala-lang/scala-reflect/2.11.7/jars/scala-reflect.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/bundles/jackson-datatype-jdk8-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/bundles/jackson-datatype-jsr310-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.slf4j/slf4j-api/1.7.21/jars/slf4j-api.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.slf4j/jul-to-slf4j/1.7.21/jars/jul-to-slf4j.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.slf4j/jcl-over-slf4j/1.7.21/jars/jcl-over-slf4j.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-streams_2.11/jars/play-streams_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.reactivestreams/reactive-streams/1.0.0/jars/reactive-streams.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-stream_2.11/jars/akka-stream_2.11-2.4.12.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.4.12.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.scala-lang.modules/scala-java8-compat_2.11/0.7.0/bundles/scala-java8-compat_2.11.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe/ssl-config-core_2.11/0.2.1/bundles/ssl-config-core_2.11.jar:/Users/ostdong/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.4.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.4.12.jar:/Users/ostdong/activator-dist-1.3.12/repository/commons-codec/commons-codec/1.10/jars/commons-codec.jar:/Users/ostdong/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/ostdong/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/ostdong/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.google.inject/guice/4.0/jars/guice.jar:/Users/ostdong/activator-dist-1.3.12/repository/javax.inject/javax.inject/1/jars/javax.inject.jar:/Users/ostdong/activator-dist-1.3.12/repository/aopalliance/aopalliance/1.0/jars/aopalliance.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.google.inject.extensions/guice-assistedinject/4.0/jars/guice-assistedinject.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe.netty/netty-reactive-streams-http/1.0.8/jars/netty-reactive-streams-http.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe.netty/netty-reactive-streams/1.0.8/jars/netty-reactive-streams.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-handler/4.0.41.Final/jars/netty-handler.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-buffer/4.0.41.Final/jars/netty-buffer.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-common/4.0.41.Final/jars/netty-common.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-transport/4.0.41.Final/jars/netty-transport.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-codec/4.0.41.Final/jars/netty-codec.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-codec-http/4.0.41.Final/jars/netty-codec-http.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-transport-native-epoll/4.0.41.Final/jars/netty-transport-native-epoll-linux-x86_64.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-logback_2.11/jars/play-logback_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/ch.qos.logback/logback-classic/1.1.7/jars/logback-classic.jar:/Users/ostdong/activator-dist-1.3.12/repository/ch.qos.logback/logback-core/1.1.7/jars/logback-core.jar:/Users/ostdong/.ivy2/cache/org.webjars/flot/jars/flot-0.8.3.jar:/Users/ostdong/.ivy2/cache/org.webjars/jquery/jars/jquery-1.11.1.jar:/Users/ostdong/.ivy2/cache/org.webjars/explorercanvas/jars/explorercanvas-r3-1.jar:/Users/ostdong/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.3.6.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-http-core_2.11/jars/akka-http-core_2.11-2.4.11.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-parsing_2.11/jars/akka-parsing_2.11-2.4.11.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-http-experimental_2.11/jars/akka-http-experimental_2.11-2.4.11.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/net.sf.ehcache/ehcache-core/2.6.11/jars/ehcache-core.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.google.guava/guava/19.0/bundles/guava.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.asynchttpclient/async-http-client/2.0.11/jars/async-http-client.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.asynchttpclient/netty-resolver-dns/2.0.11/jars/netty-resolver-dns.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.asynchttpclient/netty-resolver/2.0.11/jars/netty-resolver.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.asynchttpclient/netty-codec-dns/2.0.11/jars/netty-codec-dns.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.javassist/javassist/3.20.0-GA/bundles/javassist.jar:/Users/ostdong/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/ostdong/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/Users/ostdong/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/ostdong/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-5.1.34.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-slick_2.11/jars/play-slick_2.11-2.0.0.jar:/Users/ostdong/.ivy2/cache/com.typesafe.slick/slick_2.11/bundles/slick_2.11-3.1.0.jar:/Users/ostdong/.ivy2/cache/com.typesafe.slick/slick-hikaricp_2.11/bundles/slick-hikaricp_2.11-3.1.0.jar:/Users/ostdong/.ivy2/cache/com.zaxxer/HikariCP-java6/bundles/HikariCP-java6-2.3.7.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.5.0.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-slick-evolutions_2.11/jars/play-slick-evolutions_2.11-2.0.0.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-jdbc-evolutions_2.11/jars/play-jdbc-evolutions_2.11-2.5.0.jar
+Read from stdout: /Users/ostdong/Communicourse/Communicourse/app/controllers/ChatgroupController.scala:39: type mismatch;
+Read from stdout: found   : Boolean
+Read from stdout: required: play.api.mvc.Result
+/Users/ostdong/Communicourse/Communicourse/app/controllers/ChatgroupController.scala:39: type mismatch;
+ found   : Boolean
+ required: play.api.mvc.Result
+Read from stdout: Ok == null
+       Ok == null
+Read from stdout: ^
+          ^
+Read from stdout: one error found
+one error found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 2 s, completed Feb 12, 2017 12:04:25 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@7bce14f3, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/ostdong/Communicourse/Communicourse/app/controllers/ChatgroupController.scala, /Users/ostdong/Communicourse/Communicourse/app/controllers/MessageController.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/ostdong/Communicourse/Communicourse/app/controllers/ChatgroupController.scala, /Users/ostdong/Communicourse/Communicourse/app/controllers/MessageController.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/ostdong/Communicourse/Communicourse/app/controllers/ChatgroupController.scala, /Users/ostdong/Communicourse/Communicourse/app/controllers/MessageController.scala)
+
+Read from stdout: Compiling 2 Scala sources to /Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes...
+Compiling 2 Scala sources to /Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.8
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.8
+Other repositories:
+Default repositories:
+Running cached compiler 2ce4d987, interfacing (CompilerInterface) with Scala compiler version 2.11.8
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/classes:/Users/ostdong/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar
+	-classpath
+	/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.apache.commons/commons-lang3/3.4/jars/commons-lang3.jar:/Users/ostdong/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe/config/1.3.0/bundles/config.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.9.6.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.joda/joda-convert/1.8.1/jars/joda-convert.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.scala-lang/scala-reflect/2.11.7/jars/scala-reflect.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/bundles/jackson-datatype-jdk8-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/bundles/jackson-datatype-jsr310-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.slf4j/slf4j-api/1.7.21/jars/slf4j-api.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.slf4j/jul-to-slf4j/1.7.21/jars/jul-to-slf4j.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.slf4j/jcl-over-slf4j/1.7.21/jars/jcl-over-slf4j.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-streams_2.11/jars/play-streams_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.reactivestreams/reactive-streams/1.0.0/jars/reactive-streams.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-stream_2.11/jars/akka-stream_2.11-2.4.12.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.4.12.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.scala-lang.modules/scala-java8-compat_2.11/0.7.0/bundles/scala-java8-compat_2.11.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe/ssl-config-core_2.11/0.2.1/bundles/ssl-config-core_2.11.jar:/Users/ostdong/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.4.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.4.12.jar:/Users/ostdong/activator-dist-1.3.12/repository/commons-codec/commons-codec/1.10/jars/commons-codec.jar:/Users/ostdong/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/ostdong/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/ostdong/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.google.inject/guice/4.0/jars/guice.jar:/Users/ostdong/activator-dist-1.3.12/repository/javax.inject/javax.inject/1/jars/javax.inject.jar:/Users/ostdong/activator-dist-1.3.12/repository/aopalliance/aopalliance/1.0/jars/aopalliance.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.google.inject.extensions/guice-assistedinject/4.0/jars/guice-assistedinject.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe.netty/netty-reactive-streams-http/1.0.8/jars/netty-reactive-streams-http.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe.netty/netty-reactive-streams/1.0.8/jars/netty-reactive-streams.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-handler/4.0.41.Final/jars/netty-handler.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-buffer/4.0.41.Final/jars/netty-buffer.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-common/4.0.41.Final/jars/netty-common.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-transport/4.0.41.Final/jars/netty-transport.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-codec/4.0.41.Final/jars/netty-codec.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-codec-http/4.0.41.Final/jars/netty-codec-http.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-transport-native-epoll/4.0.41.Final/jars/netty-transport-native-epoll-linux-x86_64.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-logback_2.11/jars/play-logback_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/ch.qos.logback/logback-classic/1.1.7/jars/logback-classic.jar:/Users/ostdong/activator-dist-1.3.12/repository/ch.qos.logback/logback-core/1.1.7/jars/logback-core.jar:/Users/ostdong/.ivy2/cache/org.webjars/flot/jars/flot-0.8.3.jar:/Users/ostdong/.ivy2/cache/org.webjars/jquery/jars/jquery-1.11.1.jar:/Users/ostdong/.ivy2/cache/org.webjars/explorercanvas/jars/explorercanvas-r3-1.jar:/Users/ostdong/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.3.6.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-http-core_2.11/jars/akka-http-core_2.11-2.4.11.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-parsing_2.11/jars/akka-parsing_2.11-2.4.11.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-http-experimental_2.11/jars/akka-http-experimental_2.11-2.4.11.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/net.sf.ehcache/ehcache-core/2.6.11/jars/ehcache-core.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.google.guava/guava/19.0/bundles/guava.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.asynchttpclient/async-http-client/2.0.11/jars/async-http-client.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.asynchttpclient/netty-resolver-dns/2.0.11/jars/netty-resolver-dns.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.asynchttpclient/netty-resolver/2.0.11/jars/netty-resolver.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.asynchttpclient/netty-codec-dns/2.0.11/jars/netty-codec-dns.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.javassist/javassist/3.20.0-GA/bundles/javassist.jar:/Users/ostdong/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/ostdong/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/Users/ostdong/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/ostdong/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-5.1.34.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-slick_2.11/jars/play-slick_2.11-2.0.0.jar:/Users/ostdong/.ivy2/cache/com.typesafe.slick/slick_2.11/bundles/slick_2.11-3.1.0.jar:/Users/ostdong/.ivy2/cache/com.typesafe.slick/slick-hikaricp_2.11/bundles/slick-hikaricp_2.11-3.1.0.jar:/Users/ostdong/.ivy2/cache/com.zaxxer/HikariCP-java6/bundles/HikariCP-java6-2.3.7.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.5.0.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-slick-evolutions_2.11/jars/play-slick-evolutions_2.11-2.0.0.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-jdbc-evolutions_2.11/jars/play-jdbc-evolutions_2.11-2.5.0.jar
+Read from stdout: /Users/ostdong/Communicourse/Communicourse/app/controllers/ChatgroupController.scala:39: type mismatch;
+Read from stdout: found   : Boolean
+Read from stdout: required: play.api.mvc.Result
+/Users/ostdong/Communicourse/Communicourse/app/controllers/ChatgroupController.scala:39: type mismatch;
+ found   : Boolean
+ required: play.api.mvc.Result
+Read from stdout: Ok == null
+       Ok == null
+Read from stdout: ^
+          ^
+Read from stdout: one error found
+one error found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 1 s, completed Feb 12, 2017 12:04:36 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@152a1a06, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/ostdong/Communicourse/Communicourse/app/controllers/MessageController.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/ostdong/Communicourse/Communicourse/app/controllers/MessageController.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/ostdong/Communicourse/Communicourse/app/controllers/MessageController.scala)
+
+Read from stdout: Compiling 1 Scala source to /Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes...
+Compiling 1 Scala source to /Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.8
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.8
+Other repositories:
+Default repositories:
+Running cached compiler 1d2a3322, interfacing (CompilerInterface) with Scala compiler version 2.11.8
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/classes:/Users/ostdong/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar
+	-classpath
+	/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.apache.commons/commons-lang3/3.4/jars/commons-lang3.jar:/Users/ostdong/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe/config/1.3.0/bundles/config.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.9.6.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.joda/joda-convert/1.8.1/jars/joda-convert.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.scala-lang/scala-reflect/2.11.7/jars/scala-reflect.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/bundles/jackson-datatype-jdk8-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/bundles/jackson-datatype-jsr310-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.slf4j/slf4j-api/1.7.21/jars/slf4j-api.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.slf4j/jul-to-slf4j/1.7.21/jars/jul-to-slf4j.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.slf4j/jcl-over-slf4j/1.7.21/jars/jcl-over-slf4j.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-streams_2.11/jars/play-streams_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.reactivestreams/reactive-streams/1.0.0/jars/reactive-streams.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-stream_2.11/jars/akka-stream_2.11-2.4.12.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.4.12.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.scala-lang.modules/scala-java8-compat_2.11/0.7.0/bundles/scala-java8-compat_2.11.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe/ssl-config-core_2.11/0.2.1/bundles/ssl-config-core_2.11.jar:/Users/ostdong/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.4.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.4.12.jar:/Users/ostdong/activator-dist-1.3.12/repository/commons-codec/commons-codec/1.10/jars/commons-codec.jar:/Users/ostdong/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/ostdong/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/ostdong/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.google.inject/guice/4.0/jars/guice.jar:/Users/ostdong/activator-dist-1.3.12/repository/javax.inject/javax.inject/1/jars/javax.inject.jar:/Users/ostdong/activator-dist-1.3.12/repository/aopalliance/aopalliance/1.0/jars/aopalliance.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.google.inject.extensions/guice-assistedinject/4.0/jars/guice-assistedinject.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe.netty/netty-reactive-streams-http/1.0.8/jars/netty-reactive-streams-http.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe.netty/netty-reactive-streams/1.0.8/jars/netty-reactive-streams.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-handler/4.0.41.Final/jars/netty-handler.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-buffer/4.0.41.Final/jars/netty-buffer.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-common/4.0.41.Final/jars/netty-common.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-transport/4.0.41.Final/jars/netty-transport.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-codec/4.0.41.Final/jars/netty-codec.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-codec-http/4.0.41.Final/jars/netty-codec-http.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-transport-native-epoll/4.0.41.Final/jars/netty-transport-native-epoll-linux-x86_64.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-logback_2.11/jars/play-logback_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/ch.qos.logback/logback-classic/1.1.7/jars/logback-classic.jar:/Users/ostdong/activator-dist-1.3.12/repository/ch.qos.logback/logback-core/1.1.7/jars/logback-core.jar:/Users/ostdong/.ivy2/cache/org.webjars/flot/jars/flot-0.8.3.jar:/Users/ostdong/.ivy2/cache/org.webjars/jquery/jars/jquery-1.11.1.jar:/Users/ostdong/.ivy2/cache/org.webjars/explorercanvas/jars/explorercanvas-r3-1.jar:/Users/ostdong/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.3.6.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-http-core_2.11/jars/akka-http-core_2.11-2.4.11.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-parsing_2.11/jars/akka-parsing_2.11-2.4.11.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-http-experimental_2.11/jars/akka-http-experimental_2.11-2.4.11.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/net.sf.ehcache/ehcache-core/2.6.11/jars/ehcache-core.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.google.guava/guava/19.0/bundles/guava.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.asynchttpclient/async-http-client/2.0.11/jars/async-http-client.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.asynchttpclient/netty-resolver-dns/2.0.11/jars/netty-resolver-dns.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.asynchttpclient/netty-resolver/2.0.11/jars/netty-resolver.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.asynchttpclient/netty-codec-dns/2.0.11/jars/netty-codec-dns.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.javassist/javassist/3.20.0-GA/bundles/javassist.jar:/Users/ostdong/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/ostdong/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/Users/ostdong/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/ostdong/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-5.1.34.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-slick_2.11/jars/play-slick_2.11-2.0.0.jar:/Users/ostdong/.ivy2/cache/com.typesafe.slick/slick_2.11/bundles/slick_2.11-3.1.0.jar:/Users/ostdong/.ivy2/cache/com.typesafe.slick/slick-hikaricp_2.11/bundles/slick-hikaricp_2.11-3.1.0.jar:/Users/ostdong/.ivy2/cache/com.zaxxer/HikariCP-java6/bundles/HikariCP-java6-2.3.7.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.5.0.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-slick-evolutions_2.11/jars/play-slick-evolutions_2.11-2.0.0.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-jdbc-evolutions_2.11/jars/play-jdbc-evolutions_2.11-2.5.0.jar
+Scala compilation took 2.04096308 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 2 s, completed Feb 12, 2017 12:04:55 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@b631f73, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/ostdong/Communicourse/Communicourse/app/controllers/ChatgroupController.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/ostdong/Communicourse/Communicourse/app/controllers/ChatgroupController.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/ostdong/Communicourse/Communicourse/app/controllers/ChatgroupController.scala)
+
+Read from stdout: Compiling 1 Scala source to /Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes...
+Compiling 1 Scala source to /Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.8
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.8
+Other repositories:
+Default repositories:
+Running cached compiler 715a72c3, interfacing (CompilerInterface) with Scala compiler version 2.11.8
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/classes:/Users/ostdong/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar
+	-classpath
+	/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.apache.commons/commons-lang3/3.4/jars/commons-lang3.jar:/Users/ostdong/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe/config/1.3.0/bundles/config.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.9.6.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.joda/joda-convert/1.8.1/jars/joda-convert.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.scala-lang/scala-reflect/2.11.7/jars/scala-reflect.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/bundles/jackson-datatype-jdk8-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/bundles/jackson-datatype-jsr310-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.slf4j/slf4j-api/1.7.21/jars/slf4j-api.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.slf4j/jul-to-slf4j/1.7.21/jars/jul-to-slf4j.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.slf4j/jcl-over-slf4j/1.7.21/jars/jcl-over-slf4j.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-streams_2.11/jars/play-streams_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.reactivestreams/reactive-streams/1.0.0/jars/reactive-streams.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-stream_2.11/jars/akka-stream_2.11-2.4.12.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.4.12.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.scala-lang.modules/scala-java8-compat_2.11/0.7.0/bundles/scala-java8-compat_2.11.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe/ssl-config-core_2.11/0.2.1/bundles/ssl-config-core_2.11.jar:/Users/ostdong/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.4.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.4.12.jar:/Users/ostdong/activator-dist-1.3.12/repository/commons-codec/commons-codec/1.10/jars/commons-codec.jar:/Users/ostdong/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/ostdong/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/ostdong/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.google.inject/guice/4.0/jars/guice.jar:/Users/ostdong/activator-dist-1.3.12/repository/javax.inject/javax.inject/1/jars/javax.inject.jar:/Users/ostdong/activator-dist-1.3.12/repository/aopalliance/aopalliance/1.0/jars/aopalliance.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.google.inject.extensions/guice-assistedinject/4.0/jars/guice-assistedinject.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe.netty/netty-reactive-streams-http/1.0.8/jars/netty-reactive-streams-http.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe.netty/netty-reactive-streams/1.0.8/jars/netty-reactive-streams.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-handler/4.0.41.Final/jars/netty-handler.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-buffer/4.0.41.Final/jars/netty-buffer.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-common/4.0.41.Final/jars/netty-common.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-transport/4.0.41.Final/jars/netty-transport.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-codec/4.0.41.Final/jars/netty-codec.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-codec-http/4.0.41.Final/jars/netty-codec-http.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-transport-native-epoll/4.0.41.Final/jars/netty-transport-native-epoll-linux-x86_64.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-logback_2.11/jars/play-logback_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/ch.qos.logback/logback-classic/1.1.7/jars/logback-classic.jar:/Users/ostdong/activator-dist-1.3.12/repository/ch.qos.logback/logback-core/1.1.7/jars/logback-core.jar:/Users/ostdong/.ivy2/cache/org.webjars/flot/jars/flot-0.8.3.jar:/Users/ostdong/.ivy2/cache/org.webjars/jquery/jars/jquery-1.11.1.jar:/Users/ostdong/.ivy2/cache/org.webjars/explorercanvas/jars/explorercanvas-r3-1.jar:/Users/ostdong/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.3.6.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-http-core_2.11/jars/akka-http-core_2.11-2.4.11.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-parsing_2.11/jars/akka-parsing_2.11-2.4.11.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-http-experimental_2.11/jars/akka-http-experimental_2.11-2.4.11.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/net.sf.ehcache/ehcache-core/2.6.11/jars/ehcache-core.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.google.guava/guava/19.0/bundles/guava.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.asynchttpclient/async-http-client/2.0.11/jars/async-http-client.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.asynchttpclient/netty-resolver-dns/2.0.11/jars/netty-resolver-dns.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.asynchttpclient/netty-resolver/2.0.11/jars/netty-resolver.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.asynchttpclient/netty-codec-dns/2.0.11/jars/netty-codec-dns.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.javassist/javassist/3.20.0-GA/bundles/javassist.jar:/Users/ostdong/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/ostdong/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/Users/ostdong/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/ostdong/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-5.1.34.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-slick_2.11/jars/play-slick_2.11-2.0.0.jar:/Users/ostdong/.ivy2/cache/com.typesafe.slick/slick_2.11/bundles/slick_2.11-3.1.0.jar:/Users/ostdong/.ivy2/cache/com.typesafe.slick/slick-hikaricp_2.11/bundles/slick-hikaricp_2.11-3.1.0.jar:/Users/ostdong/.ivy2/cache/com.zaxxer/HikariCP-java6/bundles/HikariCP-java6-2.3.7.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.5.0.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-slick-evolutions_2.11/jars/play-slick-evolutions_2.11-2.0.0.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-jdbc-evolutions_2.11/jars/play-jdbc-evolutions_2.11-2.5.0.jar
+Scala compilation took 1.434585567 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 2 s, completed Feb 12, 2017 12:05:19 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@5f321bb2, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/ostdong/Communicourse/Communicourse/app/controllers/ChatgroupController.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/ostdong/Communicourse/Communicourse/app/controllers/ChatgroupController.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/ostdong/Communicourse/Communicourse/app/controllers/ChatgroupController.scala)
+
+Read from stdout: Compiling 1 Scala source to /Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes...
+Compiling 1 Scala source to /Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.8
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.8
+Other repositories:
+Default repositories:
+Running cached compiler 3dd031d7, interfacing (CompilerInterface) with Scala compiler version 2.11.8
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/classes:/Users/ostdong/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar
+	-classpath
+	/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.apache.commons/commons-lang3/3.4/jars/commons-lang3.jar:/Users/ostdong/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe/config/1.3.0/bundles/config.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.9.6.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.joda/joda-convert/1.8.1/jars/joda-convert.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.scala-lang/scala-reflect/2.11.7/jars/scala-reflect.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/bundles/jackson-datatype-jdk8-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/bundles/jackson-datatype-jsr310-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.slf4j/slf4j-api/1.7.21/jars/slf4j-api.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.slf4j/jul-to-slf4j/1.7.21/jars/jul-to-slf4j.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.slf4j/jcl-over-slf4j/1.7.21/jars/jcl-over-slf4j.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-streams_2.11/jars/play-streams_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.reactivestreams/reactive-streams/1.0.0/jars/reactive-streams.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-stream_2.11/jars/akka-stream_2.11-2.4.12.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.4.12.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.scala-lang.modules/scala-java8-compat_2.11/0.7.0/bundles/scala-java8-compat_2.11.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe/ssl-config-core_2.11/0.2.1/bundles/ssl-config-core_2.11.jar:/Users/ostdong/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.4.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.4.12.jar:/Users/ostdong/activator-dist-1.3.12/repository/commons-codec/commons-codec/1.10/jars/commons-codec.jar:/Users/ostdong/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/ostdong/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/ostdong/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.google.inject/guice/4.0/jars/guice.jar:/Users/ostdong/activator-dist-1.3.12/repository/javax.inject/javax.inject/1/jars/javax.inject.jar:/Users/ostdong/activator-dist-1.3.12/repository/aopalliance/aopalliance/1.0/jars/aopalliance.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.google.inject.extensions/guice-assistedinject/4.0/jars/guice-assistedinject.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe.netty/netty-reactive-streams-http/1.0.8/jars/netty-reactive-streams-http.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe.netty/netty-reactive-streams/1.0.8/jars/netty-reactive-streams.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-handler/4.0.41.Final/jars/netty-handler.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-buffer/4.0.41.Final/jars/netty-buffer.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-common/4.0.41.Final/jars/netty-common.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-transport/4.0.41.Final/jars/netty-transport.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-codec/4.0.41.Final/jars/netty-codec.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-codec-http/4.0.41.Final/jars/netty-codec-http.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-transport-native-epoll/4.0.41.Final/jars/netty-transport-native-epoll-linux-x86_64.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-logback_2.11/jars/play-logback_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/ch.qos.logback/logback-classic/1.1.7/jars/logback-classic.jar:/Users/ostdong/activator-dist-1.3.12/repository/ch.qos.logback/logback-core/1.1.7/jars/logback-core.jar:/Users/ostdong/.ivy2/cache/org.webjars/flot/jars/flot-0.8.3.jar:/Users/ostdong/.ivy2/cache/org.webjars/jquery/jars/jquery-1.11.1.jar:/Users/ostdong/.ivy2/cache/org.webjars/explorercanvas/jars/explorercanvas-r3-1.jar:/Users/ostdong/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.3.6.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-http-core_2.11/jars/akka-http-core_2.11-2.4.11.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-parsing_2.11/jars/akka-parsing_2.11-2.4.11.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-http-experimental_2.11/jars/akka-http-experimental_2.11-2.4.11.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/net.sf.ehcache/ehcache-core/2.6.11/jars/ehcache-core.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.google.guava/guava/19.0/bundles/guava.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.asynchttpclient/async-http-client/2.0.11/jars/async-http-client.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.asynchttpclient/netty-resolver-dns/2.0.11/jars/netty-resolver-dns.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.asynchttpclient/netty-resolver/2.0.11/jars/netty-resolver.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.asynchttpclient/netty-codec-dns/2.0.11/jars/netty-codec-dns.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.javassist/javassist/3.20.0-GA/bundles/javassist.jar:/Users/ostdong/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/ostdong/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/Users/ostdong/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/ostdong/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-5.1.34.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-slick_2.11/jars/play-slick_2.11-2.0.0.jar:/Users/ostdong/.ivy2/cache/com.typesafe.slick/slick_2.11/bundles/slick_2.11-3.1.0.jar:/Users/ostdong/.ivy2/cache/com.typesafe.slick/slick-hikaricp_2.11/bundles/slick-hikaricp_2.11-3.1.0.jar:/Users/ostdong/.ivy2/cache/com.zaxxer/HikariCP-java6/bundles/HikariCP-java6-2.3.7.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.5.0.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-slick-evolutions_2.11/jars/play-slick-evolutions_2.11-2.0.0.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-jdbc-evolutions_2.11/jars/play-jdbc-evolutions_2.11-2.5.0.jar
+Scala compilation took 1.5550604 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 2 s, completed Feb 12, 2017 12:08:04 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@2204f8bf, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 0 s, completed Feb 12, 2017 12:08:07 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > backgroundRun
 Evaluating tasks: compile:backgroundRun
-Running task... Cancel: sbt.server.ServerTaskCancellation@5aa2db9c, check cycles: false
-Total time: 0 s, completed Feb 10, 2017 11:00:33 PM
+Running task... Cancel: sbt.server.ServerTaskCancellation@34361d49, check cycles: false
+Total time: 0 s, completed Feb 12, 2017 12:08:17 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/ostdong/Communicourse/Communicourse/}root/*:playForkConfig
 Evaluating tasks: *:playForkConfig
-Running task... Cancel: sbt.server.ServerTaskCancellation@5ff97b73, check cycles: false
-Total time: 1 s, completed Feb 10, 2017 11:00:36 PM
+Running task... Cancel: sbt.server.ServerTaskCancellation@14277f7e, check cycles: false
+Total time: 0 s, completed Feb 12, 2017 12:08:20 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > root/playForkNotifyStart http://localhost:9000
 Evaluating tasks: *:playForkNotifyStart
-Running task... Cancel: sbt.server.ServerTaskCancellation@3fcbaec5, check cycles: false
-Total time: 0 s, completed Feb 10, 2017 11:00:38 PM
+Running task... Cancel: sbt.server.ServerTaskCancellation@296f09, check cycles: false
+Total time: 0 s, completed Feb 12, 2017 12:08:23 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/ostdong/Communicourse/Communicourse/}root/*:playForkReload
 Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@3ef108e4, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@35c3cd76, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -206,27 +604,27 @@ Copy resource mappings:
 	(/Users/ostdong/Communicourse/Communicourse/conf/logback.xml,/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes/logback.xml)
 	(/Users/ostdong/Communicourse/Communicourse/conf/messages,/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes/messages)
 	(/Users/ostdong/Communicourse/Communicourse/conf/routes,/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes/routes)
-Total time: 2 s, completed Feb 10, 2017 11:00:44 PM
+Total time: 2 s, completed Feb 12, 2017 12:08:25 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > compile
 Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@1f694681, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@42d0ac93, check cycles: false
 
 Initial source changes: 
 	removed:Set()
 	added: Set()
-	modified: Set(/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/twirl/main/views/html/chat_room.template.scala)
+	modified: Set(/Users/ostdong/Communicourse/Communicourse/app/controllers/ChatgroupController.scala)
 Removed products: Set()
 External API changes: API Changes: Set()
 Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/twirl/main/views/html/chat_room.template.scala)
+Initial directly invalidated sources: Set(/Users/ostdong/Communicourse/Communicourse/app/controllers/ChatgroupController.scala)
 
 Sources indirectly invalidated by:
 	product: Set()
 	binary dep: Set()
 	external source: Set()
-All initially invalidated sources: Set(/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/twirl/main/views/html/chat_room.template.scala)
+All initially invalidated sources: Set(/Users/ostdong/Communicourse/Communicourse/app/controllers/ChatgroupController.scala)
 
 Read from stdout: Compiling 1 Scala source to /Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes...
 Compiling 1 Scala source to /Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes...
@@ -236,7 +634,7 @@ Default repositories:
 Getting compiler-interface from component compiler for Scala 2.11.8
 Other repositories:
 Default repositories:
-Running cached compiler 1309baef, interfacing (CompilerInterface) with Scala compiler version 2.11.8
+Running cached compiler 35930c85, interfacing (CompilerInterface) with Scala compiler version 2.11.8
 Calling Scala compiler with arguments  (CompilerInterface):
 	-deprecation
 	-unchecked
@@ -246,19 +644,19 @@ Calling Scala compiler with arguments  (CompilerInterface):
 	/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/classes:/Users/ostdong/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar
 	-classpath
 	/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.apache.commons/commons-lang3/3.4/jars/commons-lang3.jar:/Users/ostdong/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe/config/1.3.0/bundles/config.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.9.6.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.joda/joda-convert/1.8.1/jars/joda-convert.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.scala-lang/scala-reflect/2.11.7/jars/scala-reflect.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/bundles/jackson-datatype-jdk8-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/bundles/jackson-datatype-jsr310-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.slf4j/slf4j-api/1.7.21/jars/slf4j-api.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.slf4j/jul-to-slf4j/1.7.21/jars/jul-to-slf4j.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.slf4j/jcl-over-slf4j/1.7.21/jars/jcl-over-slf4j.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-streams_2.11/jars/play-streams_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.reactivestreams/reactive-streams/1.0.0/jars/reactive-streams.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-stream_2.11/jars/akka-stream_2.11-2.4.12.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.4.12.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.scala-lang.modules/scala-java8-compat_2.11/0.7.0/bundles/scala-java8-compat_2.11.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe/ssl-config-core_2.11/0.2.1/bundles/ssl-config-core_2.11.jar:/Users/ostdong/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.4.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.4.12.jar:/Users/ostdong/activator-dist-1.3.12/repository/commons-codec/commons-codec/1.10/jars/commons-codec.jar:/Users/ostdong/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/ostdong/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/ostdong/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.google.inject/guice/4.0/jars/guice.jar:/Users/ostdong/activator-dist-1.3.12/repository/javax.inject/javax.inject/1/jars/javax.inject.jar:/Users/ostdong/activator-dist-1.3.12/repository/aopalliance/aopalliance/1.0/jars/aopalliance.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.google.inject.extensions/guice-assistedinject/4.0/jars/guice-assistedinject.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe.netty/netty-reactive-streams-http/1.0.8/jars/netty-reactive-streams-http.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe.netty/netty-reactive-streams/1.0.8/jars/netty-reactive-streams.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-handler/4.0.41.Final/jars/netty-handler.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-buffer/4.0.41.Final/jars/netty-buffer.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-common/4.0.41.Final/jars/netty-common.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-transport/4.0.41.Final/jars/netty-transport.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-codec/4.0.41.Final/jars/netty-codec.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-codec-http/4.0.41.Final/jars/netty-codec-http.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-transport-native-epoll/4.0.41.Final/jars/netty-transport-native-epoll-linux-x86_64.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-logback_2.11/jars/play-logback_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/ch.qos.logback/logback-classic/1.1.7/jars/logback-classic.jar:/Users/ostdong/activator-dist-1.3.12/repository/ch.qos.logback/logback-core/1.1.7/jars/logback-core.jar:/Users/ostdong/.ivy2/cache/org.webjars/flot/jars/flot-0.8.3.jar:/Users/ostdong/.ivy2/cache/org.webjars/jquery/jars/jquery-1.11.1.jar:/Users/ostdong/.ivy2/cache/org.webjars/explorercanvas/jars/explorercanvas-r3-1.jar:/Users/ostdong/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.3.6.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-http-core_2.11/jars/akka-http-core_2.11-2.4.11.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-parsing_2.11/jars/akka-parsing_2.11-2.4.11.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-http-experimental_2.11/jars/akka-http-experimental_2.11-2.4.11.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/net.sf.ehcache/ehcache-core/2.6.11/jars/ehcache-core.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.google.guava/guava/19.0/bundles/guava.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.asynchttpclient/async-http-client/2.0.11/jars/async-http-client.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.asynchttpclient/netty-resolver-dns/2.0.11/jars/netty-resolver-dns.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.asynchttpclient/netty-resolver/2.0.11/jars/netty-resolver.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.asynchttpclient/netty-codec-dns/2.0.11/jars/netty-codec-dns.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.javassist/javassist/3.20.0-GA/bundles/javassist.jar:/Users/ostdong/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/ostdong/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/Users/ostdong/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/ostdong/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-5.1.34.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-slick_2.11/jars/play-slick_2.11-2.0.0.jar:/Users/ostdong/.ivy2/cache/com.typesafe.slick/slick_2.11/bundles/slick_2.11-3.1.0.jar:/Users/ostdong/.ivy2/cache/com.typesafe.slick/slick-hikaricp_2.11/bundles/slick-hikaricp_2.11-3.1.0.jar:/Users/ostdong/.ivy2/cache/com.zaxxer/HikariCP-java6/bundles/HikariCP-java6-2.3.7.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.5.0.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-slick-evolutions_2.11/jars/play-slick-evolutions_2.11-2.0.0.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-jdbc-evolutions_2.11/jars/play-jdbc-evolutions_2.11-2.5.0.jar
-Scala compilation took 1.438911934 s
+Scala compilation took 1.437674245 s
 New invalidations:
 	Set()
 Initial set of included nodes: Set()
 Previously invalidated, but (transitively) depend on new invalidations:
 	Set()
 All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 2 s, completed Feb 10, 2017 11:01:48 PM
+Total time: 2 s, completed Feb 12, 2017 12:09:35 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/ostdong/Communicourse/Communicourse/}root/*:playForkReload
 Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@49486125, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@424ce9e0, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -280,256 +678,27 @@ Copy resource mappings:
 	(/Users/ostdong/Communicourse/Communicourse/conf/logback.xml,/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes/logback.xml)
 	(/Users/ostdong/Communicourse/Communicourse/conf/messages,/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes/messages)
 	(/Users/ostdong/Communicourse/Communicourse/conf/routes,/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes/routes)
-Total time: 1 s, completed Feb 10, 2017 11:01:57 PM
+Total time: 1 s, completed Feb 12, 2017 12:09:43 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > compile
 Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@4ca50328, check cycles: false
-
-Initial source changes: 
-	removed:Set(/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/twirl/main/views/html/createchatgroup.template.scala)
-	added: Set()
-	modified: Set(/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/twirl/main/views/html/create_chatgroup.template.scala, /Users/ostdong/Communicourse/Communicourse/target/scala-2.11/twirl/main/views/html/list_members.template.scala, /Users/ostdong/Communicourse/Communicourse/target/scala-2.11/twirl/main/views/html/list_owner.template.scala)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/twirl/main/views/html/create_chatgroup.template.scala, /Users/ostdong/Communicourse/Communicourse/target/scala-2.11/twirl/main/views/html/createchatgroup.template.scala, /Users/ostdong/Communicourse/Communicourse/target/scala-2.11/twirl/main/views/html/list_members.template.scala, /Users/ostdong/Communicourse/Communicourse/target/scala-2.11/twirl/main/views/html/list_owner.template.scala)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/twirl/main/views/html/create_chatgroup.template.scala, /Users/ostdong/Communicourse/Communicourse/target/scala-2.11/twirl/main/views/html/createchatgroup.template.scala, /Users/ostdong/Communicourse/Communicourse/target/scala-2.11/twirl/main/views/html/list_members.template.scala, /Users/ostdong/Communicourse/Communicourse/target/scala-2.11/twirl/main/views/html/list_owner.template.scala)
-
-Read from stdout: Compiling 3 Scala sources to /Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes...
-Compiling 3 Scala sources to /Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes...
-Getting compiler-interface from component compiler for Scala 2.11.8
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.8
-Other repositories:
-Default repositories:
-Running cached compiler 335f207f, interfacing (CompilerInterface) with Scala compiler version 2.11.8
-Calling Scala compiler with arguments  (CompilerInterface):
-	-deprecation
-	-unchecked
-	-encoding
-	utf8
-	-bootclasspath
-	/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/classes:/Users/ostdong/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar
-	-classpath
-	/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.apache.commons/commons-lang3/3.4/jars/commons-lang3.jar:/Users/ostdong/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe/config/1.3.0/bundles/config.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.9.6.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.joda/joda-convert/1.8.1/jars/joda-convert.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.scala-lang/scala-reflect/2.11.7/jars/scala-reflect.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/bundles/jackson-datatype-jdk8-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/bundles/jackson-datatype-jsr310-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.slf4j/slf4j-api/1.7.21/jars/slf4j-api.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.slf4j/jul-to-slf4j/1.7.21/jars/jul-to-slf4j.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.slf4j/jcl-over-slf4j/1.7.21/jars/jcl-over-slf4j.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-streams_2.11/jars/play-streams_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.reactivestreams/reactive-streams/1.0.0/jars/reactive-streams.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-stream_2.11/jars/akka-stream_2.11-2.4.12.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.4.12.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.scala-lang.modules/scala-java8-compat_2.11/0.7.0/bundles/scala-java8-compat_2.11.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe/ssl-config-core_2.11/0.2.1/bundles/ssl-config-core_2.11.jar:/Users/ostdong/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.4.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.4.12.jar:/Users/ostdong/activator-dist-1.3.12/repository/commons-codec/commons-codec/1.10/jars/commons-codec.jar:/Users/ostdong/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/ostdong/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/ostdong/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.google.inject/guice/4.0/jars/guice.jar:/Users/ostdong/activator-dist-1.3.12/repository/javax.inject/javax.inject/1/jars/javax.inject.jar:/Users/ostdong/activator-dist-1.3.12/repository/aopalliance/aopalliance/1.0/jars/aopalliance.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.google.inject.extensions/guice-assistedinject/4.0/jars/guice-assistedinject.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe.netty/netty-reactive-streams-http/1.0.8/jars/netty-reactive-streams-http.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe.netty/netty-reactive-streams/1.0.8/jars/netty-reactive-streams.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-handler/4.0.41.Final/jars/netty-handler.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-buffer/4.0.41.Final/jars/netty-buffer.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-common/4.0.41.Final/jars/netty-common.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-transport/4.0.41.Final/jars/netty-transport.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-codec/4.0.41.Final/jars/netty-codec.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-codec-http/4.0.41.Final/jars/netty-codec-http.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-transport-native-epoll/4.0.41.Final/jars/netty-transport-native-epoll-linux-x86_64.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-logback_2.11/jars/play-logback_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/ch.qos.logback/logback-classic/1.1.7/jars/logback-classic.jar:/Users/ostdong/activator-dist-1.3.12/repository/ch.qos.logback/logback-core/1.1.7/jars/logback-core.jar:/Users/ostdong/.ivy2/cache/org.webjars/flot/jars/flot-0.8.3.jar:/Users/ostdong/.ivy2/cache/org.webjars/jquery/jars/jquery-1.11.1.jar:/Users/ostdong/.ivy2/cache/org.webjars/explorercanvas/jars/explorercanvas-r3-1.jar:/Users/ostdong/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.3.6.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-http-core_2.11/jars/akka-http-core_2.11-2.4.11.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-parsing_2.11/jars/akka-parsing_2.11-2.4.11.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-http-experimental_2.11/jars/akka-http-experimental_2.11-2.4.11.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/net.sf.ehcache/ehcache-core/2.6.11/jars/ehcache-core.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.google.guava/guava/19.0/bundles/guava.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.asynchttpclient/async-http-client/2.0.11/jars/async-http-client.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.asynchttpclient/netty-resolver-dns/2.0.11/jars/netty-resolver-dns.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.asynchttpclient/netty-resolver/2.0.11/jars/netty-resolver.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.asynchttpclient/netty-codec-dns/2.0.11/jars/netty-codec-dns.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.javassist/javassist/3.20.0-GA/bundles/javassist.jar:/Users/ostdong/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/ostdong/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/Users/ostdong/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/ostdong/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-5.1.34.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-slick_2.11/jars/play-slick_2.11-2.0.0.jar:/Users/ostdong/.ivy2/cache/com.typesafe.slick/slick_2.11/bundles/slick_2.11-3.1.0.jar:/Users/ostdong/.ivy2/cache/com.typesafe.slick/slick-hikaricp_2.11/bundles/slick-hikaricp_2.11-3.1.0.jar:/Users/ostdong/.ivy2/cache/com.zaxxer/HikariCP-java6/bundles/HikariCP-java6-2.3.7.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.5.0.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-slick-evolutions_2.11/jars/play-slick-evolutions_2.11-2.0.0.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-jdbc-evolutions_2.11/jars/play-jdbc-evolutions_2.11-2.5.0.jar
-Scala compilation took 2.399080764 s
-Invalidating /Users/ostdong/Communicourse/Communicourse/target/scala-2.11/twirl/main/views/html/createchatgroup.template.scala...
-Invalidating (transitively) by inheritance from /Users/ostdong/Communicourse/Communicourse/target/scala-2.11/twirl/main/views/html/createchatgroup.template.scala...
-Initial set of included nodes: Set(/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/twirl/main/views/html/createchatgroup.template.scala)
-Invalidated by transitive inheritance dependency: Set(/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/twirl/main/views/html/createchatgroup.template.scala)
-The /Users/ostdong/Communicourse/Communicourse/target/scala-2.11/twirl/main/views/html/createchatgroup.template.scala source file has the following regular definitions changed:
-	notify, format, wait, $asInstanceOf, createchatgroup, productArity, equals, asInstanceOf, f, synchronized, _display_, $isInstanceOf, ref, canEqual, productPrefix, notifyAll, readResolve, isInstanceOf, <init>, apply, ==, clone, copy, toString, !=, getClass, copy$default$1, render, ne, createchatgroup_Scope0, eq, productIterator, ##, finalize, productElement, hashCode.
-All member reference dependencies will be considered within this context.
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 3 s, completed Feb 10, 2017 11:11:46 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/Users/ostdong/Communicourse/Communicourse/}root/*:playForkReload
-Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@269b8b1f, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@380f9081, check cycles: false
 
 Initial source changes: 
 	removed:Set()
 	added: Set()
-	modified: Set()
+	modified: Set(/Users/ostdong/Communicourse/Communicourse/app/controllers/ChatgroupController.scala)
 Removed products: Set()
 External API changes: API Changes: Set()
 Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
+Initial directly invalidated sources: Set(/Users/ostdong/Communicourse/Communicourse/app/controllers/ChatgroupController.scala)
 
 Sources indirectly invalidated by:
 	product: Set()
 	binary dep: Set()
 	external source: Set()
-All initially invalidated sources: Set()
-
-Copy resource mappings: 
-	(/Users/ostdong/Communicourse/Communicourse/conf/application.conf,/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes/application.conf)
-	(/Users/ostdong/Communicourse/Communicourse/conf/logback.xml,/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes/logback.xml)
-	(/Users/ostdong/Communicourse/Communicourse/conf/messages,/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes/messages)
-	(/Users/ostdong/Communicourse/Communicourse/conf/routes,/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes/routes)
-Total time: 1 s, completed Feb 10, 2017 11:11:59 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@3fb326c, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/twirl/main/views/html/list_members.template.scala, /Users/ostdong/Communicourse/Communicourse/target/scala-2.11/twirl/main/views/html/list_owner.template.scala)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/twirl/main/views/html/list_members.template.scala, /Users/ostdong/Communicourse/Communicourse/target/scala-2.11/twirl/main/views/html/list_owner.template.scala)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/twirl/main/views/html/list_members.template.scala, /Users/ostdong/Communicourse/Communicourse/target/scala-2.11/twirl/main/views/html/list_owner.template.scala)
-
-Read from stdout: Compiling 2 Scala sources to /Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes...
-Compiling 2 Scala sources to /Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes...
-Getting compiler-interface from component compiler for Scala 2.11.8
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.8
-Other repositories:
-Default repositories:
-Running cached compiler 751d25ea, interfacing (CompilerInterface) with Scala compiler version 2.11.8
-Calling Scala compiler with arguments  (CompilerInterface):
-	-deprecation
-	-unchecked
-	-encoding
-	utf8
-	-bootclasspath
-	/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/classes:/Users/ostdong/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar
-	-classpath
-	/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.apache.commons/commons-lang3/3.4/jars/commons-lang3.jar:/Users/ostdong/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe/config/1.3.0/bundles/config.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.9.6.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.joda/joda-convert/1.8.1/jars/joda-convert.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.scala-lang/scala-reflect/2.11.7/jars/scala-reflect.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/bundles/jackson-datatype-jdk8-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/bundles/jackson-datatype-jsr310-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.slf4j/slf4j-api/1.7.21/jars/slf4j-api.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.slf4j/jul-to-slf4j/1.7.21/jars/jul-to-slf4j.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.slf4j/jcl-over-slf4j/1.7.21/jars/jcl-over-slf4j.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-streams_2.11/jars/play-streams_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.reactivestreams/reactive-streams/1.0.0/jars/reactive-streams.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-stream_2.11/jars/akka-stream_2.11-2.4.12.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.4.12.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.scala-lang.modules/scala-java8-compat_2.11/0.7.0/bundles/scala-java8-compat_2.11.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe/ssl-config-core_2.11/0.2.1/bundles/ssl-config-core_2.11.jar:/Users/ostdong/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.4.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.4.12.jar:/Users/ostdong/activator-dist-1.3.12/repository/commons-codec/commons-codec/1.10/jars/commons-codec.jar:/Users/ostdong/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/ostdong/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/ostdong/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.google.inject/guice/4.0/jars/guice.jar:/Users/ostdong/activator-dist-1.3.12/repository/javax.inject/javax.inject/1/jars/javax.inject.jar:/Users/ostdong/activator-dist-1.3.12/repository/aopalliance/aopalliance/1.0/jars/aopalliance.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.google.inject.extensions/guice-assistedinject/4.0/jars/guice-assistedinject.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe.netty/netty-reactive-streams-http/1.0.8/jars/netty-reactive-streams-http.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe.netty/netty-reactive-streams/1.0.8/jars/netty-reactive-streams.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-handler/4.0.41.Final/jars/netty-handler.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-buffer/4.0.41.Final/jars/netty-buffer.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-common/4.0.41.Final/jars/netty-common.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-transport/4.0.41.Final/jars/netty-transport.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-codec/4.0.41.Final/jars/netty-codec.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-codec-http/4.0.41.Final/jars/netty-codec-http.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-transport-native-epoll/4.0.41.Final/jars/netty-transport-native-epoll-linux-x86_64.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-logback_2.11/jars/play-logback_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/ch.qos.logback/logback-classic/1.1.7/jars/logback-classic.jar:/Users/ostdong/activator-dist-1.3.12/repository/ch.qos.logback/logback-core/1.1.7/jars/logback-core.jar:/Users/ostdong/.ivy2/cache/org.webjars/flot/jars/flot-0.8.3.jar:/Users/ostdong/.ivy2/cache/org.webjars/jquery/jars/jquery-1.11.1.jar:/Users/ostdong/.ivy2/cache/org.webjars/explorercanvas/jars/explorercanvas-r3-1.jar:/Users/ostdong/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.3.6.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-http-core_2.11/jars/akka-http-core_2.11-2.4.11.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-parsing_2.11/jars/akka-parsing_2.11-2.4.11.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-http-experimental_2.11/jars/akka-http-experimental_2.11-2.4.11.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/net.sf.ehcache/ehcache-core/2.6.11/jars/ehcache-core.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.google.guava/guava/19.0/bundles/guava.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.asynchttpclient/async-http-client/2.0.11/jars/async-http-client.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.asynchttpclient/netty-resolver-dns/2.0.11/jars/netty-resolver-dns.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.asynchttpclient/netty-resolver/2.0.11/jars/netty-resolver.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.asynchttpclient/netty-codec-dns/2.0.11/jars/netty-codec-dns.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.javassist/javassist/3.20.0-GA/bundles/javassist.jar:/Users/ostdong/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/ostdong/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/Users/ostdong/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/ostdong/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-5.1.34.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-slick_2.11/jars/play-slick_2.11-2.0.0.jar:/Users/ostdong/.ivy2/cache/com.typesafe.slick/slick_2.11/bundles/slick_2.11-3.1.0.jar:/Users/ostdong/.ivy2/cache/com.typesafe.slick/slick-hikaricp_2.11/bundles/slick-hikaricp_2.11-3.1.0.jar:/Users/ostdong/.ivy2/cache/com.zaxxer/HikariCP-java6/bundles/HikariCP-java6-2.3.7.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.5.0.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-slick-evolutions_2.11/jars/play-slick-evolutions_2.11-2.0.0.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-jdbc-evolutions_2.11/jars/play-jdbc-evolutions_2.11-2.5.0.jar
-Scala compilation took 1.195637328 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 2 s, completed Feb 10, 2017 11:13:38 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/Users/ostdong/Communicourse/Communicourse/}root/*:playForkReload
-Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@5f6a729f, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Copy resource mappings: 
-	(/Users/ostdong/Communicourse/Communicourse/conf/application.conf,/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes/application.conf)
-	(/Users/ostdong/Communicourse/Communicourse/conf/logback.xml,/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes/logback.xml)
-	(/Users/ostdong/Communicourse/Communicourse/conf/messages,/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes/messages)
-	(/Users/ostdong/Communicourse/Communicourse/conf/routes,/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes/routes)
-Total time: 1 s, completed Feb 10, 2017 11:13:42 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@28790d8, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/twirl/main/views/html/login.template.scala, /Users/ostdong/Communicourse/Communicourse/target/scala-2.11/twirl/main/views/html/list_owner.template.scala)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/twirl/main/views/html/login.template.scala, /Users/ostdong/Communicourse/Communicourse/target/scala-2.11/twirl/main/views/html/list_owner.template.scala)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/twirl/main/views/html/login.template.scala, /Users/ostdong/Communicourse/Communicourse/target/scala-2.11/twirl/main/views/html/list_owner.template.scala)
-
-Read from stdout: Compiling 2 Scala sources to /Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes...
-Compiling 2 Scala sources to /Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes...
-Getting compiler-interface from component compiler for Scala 2.11.8
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.8
-Other repositories:
-Default repositories:
-Running cached compiler 13e7e45c, interfacing (CompilerInterface) with Scala compiler version 2.11.8
-Calling Scala compiler with arguments  (CompilerInterface):
-	-deprecation
-	-unchecked
-	-encoding
-	utf8
-	-bootclasspath
-	/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/classes:/Users/ostdong/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar
-	-classpath
-	/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.apache.commons/commons-lang3/3.4/jars/commons-lang3.jar:/Users/ostdong/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe/config/1.3.0/bundles/config.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.9.6.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.joda/joda-convert/1.8.1/jars/joda-convert.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.scala-lang/scala-reflect/2.11.7/jars/scala-reflect.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/bundles/jackson-datatype-jdk8-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/bundles/jackson-datatype-jsr310-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.slf4j/slf4j-api/1.7.21/jars/slf4j-api.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.slf4j/jul-to-slf4j/1.7.21/jars/jul-to-slf4j.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.slf4j/jcl-over-slf4j/1.7.21/jars/jcl-over-slf4j.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-streams_2.11/jars/play-streams_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.reactivestreams/reactive-streams/1.0.0/jars/reactive-streams.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-stream_2.11/jars/akka-stream_2.11-2.4.12.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.4.12.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.scala-lang.modules/scala-java8-compat_2.11/0.7.0/bundles/scala-java8-compat_2.11.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe/ssl-config-core_2.11/0.2.1/bundles/ssl-config-core_2.11.jar:/Users/ostdong/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.4.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.4.12.jar:/Users/ostdong/activator-dist-1.3.12/repository/commons-codec/commons-codec/1.10/jars/commons-codec.jar:/Users/ostdong/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/ostdong/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/ostdong/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.google.inject/guice/4.0/jars/guice.jar:/Users/ostdong/activator-dist-1.3.12/repository/javax.inject/javax.inject/1/jars/javax.inject.jar:/Users/ostdong/activator-dist-1.3.12/repository/aopalliance/aopalliance/1.0/jars/aopalliance.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.google.inject.extensions/guice-assistedinject/4.0/jars/guice-assistedinject.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe.netty/netty-reactive-streams-http/1.0.8/jars/netty-reactive-streams-http.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe.netty/netty-reactive-streams/1.0.8/jars/netty-reactive-streams.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-handler/4.0.41.Final/jars/netty-handler.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-buffer/4.0.41.Final/jars/netty-buffer.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-common/4.0.41.Final/jars/netty-common.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-transport/4.0.41.Final/jars/netty-transport.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-codec/4.0.41.Final/jars/netty-codec.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-codec-http/4.0.41.Final/jars/netty-codec-http.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-transport-native-epoll/4.0.41.Final/jars/netty-transport-native-epoll-linux-x86_64.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-logback_2.11/jars/play-logback_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/ch.qos.logback/logback-classic/1.1.7/jars/logback-classic.jar:/Users/ostdong/activator-dist-1.3.12/repository/ch.qos.logback/logback-core/1.1.7/jars/logback-core.jar:/Users/ostdong/.ivy2/cache/org.webjars/flot/jars/flot-0.8.3.jar:/Users/ostdong/.ivy2/cache/org.webjars/jquery/jars/jquery-1.11.1.jar:/Users/ostdong/.ivy2/cache/org.webjars/explorercanvas/jars/explorercanvas-r3-1.jar:/Users/ostdong/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.3.6.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-http-core_2.11/jars/akka-http-core_2.11-2.4.11.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-parsing_2.11/jars/akka-parsing_2.11-2.4.11.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-http-experimental_2.11/jars/akka-http-experimental_2.11-2.4.11.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/net.sf.ehcache/ehcache-core/2.6.11/jars/ehcache-core.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.google.guava/guava/19.0/bundles/guava.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.asynchttpclient/async-http-client/2.0.11/jars/async-http-client.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.asynchttpclient/netty-resolver-dns/2.0.11/jars/netty-resolver-dns.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.asynchttpclient/netty-resolver/2.0.11/jars/netty-resolver.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.asynchttpclient/netty-codec-dns/2.0.11/jars/netty-codec-dns.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.javassist/javassist/3.20.0-GA/bundles/javassist.jar:/Users/ostdong/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/ostdong/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/Users/ostdong/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/ostdong/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-5.1.34.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-slick_2.11/jars/play-slick_2.11-2.0.0.jar:/Users/ostdong/.ivy2/cache/com.typesafe.slick/slick_2.11/bundles/slick_2.11-3.1.0.jar:/Users/ostdong/.ivy2/cache/com.typesafe.slick/slick-hikaricp_2.11/bundles/slick-hikaricp_2.11-3.1.0.jar:/Users/ostdong/.ivy2/cache/com.zaxxer/HikariCP-java6/bundles/HikariCP-java6-2.3.7.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.5.0.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-slick-evolutions_2.11/jars/play-slick-evolutions_2.11-2.0.0.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-jdbc-evolutions_2.11/jars/play-jdbc-evolutions_2.11-2.5.0.jar
-Scala compilation took 1.1313219 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 2 s, completed Feb 10, 2017 11:15:05 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/Users/ostdong/Communicourse/Communicourse/}root/*:playForkReload
-Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@3c6e8e01, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Copy resource mappings: 
-	(/Users/ostdong/Communicourse/Communicourse/conf/application.conf,/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes/application.conf)
-	(/Users/ostdong/Communicourse/Communicourse/conf/logback.xml,/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes/logback.xml)
-	(/Users/ostdong/Communicourse/Communicourse/conf/messages,/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes/messages)
-	(/Users/ostdong/Communicourse/Communicourse/conf/routes,/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes/routes)
-Total time: 1 s, completed Feb 10, 2017 11:15:08 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/Users/ostdong/Communicourse/Communicourse/}root/*:playForkReload
-Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@53b62d1a, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/twirl/main/views/html/login.template.scala)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/twirl/main/views/html/login.template.scala)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/twirl/main/views/html/login.template.scala)
+All initially invalidated sources: Set(/Users/ostdong/Communicourse/Communicourse/app/controllers/ChatgroupController.scala)
 
 Read from stdout: Compiling 1 Scala source to /Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes...
 Compiling 1 Scala source to /Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes...
@@ -539,7 +708,7 @@ Default repositories:
 Getting compiler-interface from component compiler for Scala 2.11.8
 Other repositories:
 Default repositories:
-Running cached compiler 5c8fb2c1, interfacing (CompilerInterface) with Scala compiler version 2.11.8
+Running cached compiler 292e28b0, interfacing (CompilerInterface) with Scala compiler version 2.11.8
 Calling Scala compiler with arguments  (CompilerInterface):
 	-deprecation
 	-unchecked
@@ -549,39 +718,39 @@ Calling Scala compiler with arguments  (CompilerInterface):
 	/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/classes:/Users/ostdong/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar
 	-classpath
 	/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.apache.commons/commons-lang3/3.4/jars/commons-lang3.jar:/Users/ostdong/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe/config/1.3.0/bundles/config.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.9.6.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.joda/joda-convert/1.8.1/jars/joda-convert.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.scala-lang/scala-reflect/2.11.7/jars/scala-reflect.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/bundles/jackson-datatype-jdk8-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/bundles/jackson-datatype-jsr310-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.slf4j/slf4j-api/1.7.21/jars/slf4j-api.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.slf4j/jul-to-slf4j/1.7.21/jars/jul-to-slf4j.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.slf4j/jcl-over-slf4j/1.7.21/jars/jcl-over-slf4j.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-streams_2.11/jars/play-streams_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.reactivestreams/reactive-streams/1.0.0/jars/reactive-streams.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-stream_2.11/jars/akka-stream_2.11-2.4.12.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.4.12.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.scala-lang.modules/scala-java8-compat_2.11/0.7.0/bundles/scala-java8-compat_2.11.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe/ssl-config-core_2.11/0.2.1/bundles/ssl-config-core_2.11.jar:/Users/ostdong/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.4.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.4.12.jar:/Users/ostdong/activator-dist-1.3.12/repository/commons-codec/commons-codec/1.10/jars/commons-codec.jar:/Users/ostdong/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/ostdong/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/ostdong/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.google.inject/guice/4.0/jars/guice.jar:/Users/ostdong/activator-dist-1.3.12/repository/javax.inject/javax.inject/1/jars/javax.inject.jar:/Users/ostdong/activator-dist-1.3.12/repository/aopalliance/aopalliance/1.0/jars/aopalliance.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.google.inject.extensions/guice-assistedinject/4.0/jars/guice-assistedinject.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe.netty/netty-reactive-streams-http/1.0.8/jars/netty-reactive-streams-http.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe.netty/netty-reactive-streams/1.0.8/jars/netty-reactive-streams.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-handler/4.0.41.Final/jars/netty-handler.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-buffer/4.0.41.Final/jars/netty-buffer.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-common/4.0.41.Final/jars/netty-common.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-transport/4.0.41.Final/jars/netty-transport.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-codec/4.0.41.Final/jars/netty-codec.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-codec-http/4.0.41.Final/jars/netty-codec-http.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-transport-native-epoll/4.0.41.Final/jars/netty-transport-native-epoll-linux-x86_64.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-logback_2.11/jars/play-logback_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/ch.qos.logback/logback-classic/1.1.7/jars/logback-classic.jar:/Users/ostdong/activator-dist-1.3.12/repository/ch.qos.logback/logback-core/1.1.7/jars/logback-core.jar:/Users/ostdong/.ivy2/cache/org.webjars/flot/jars/flot-0.8.3.jar:/Users/ostdong/.ivy2/cache/org.webjars/jquery/jars/jquery-1.11.1.jar:/Users/ostdong/.ivy2/cache/org.webjars/explorercanvas/jars/explorercanvas-r3-1.jar:/Users/ostdong/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.3.6.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-http-core_2.11/jars/akka-http-core_2.11-2.4.11.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-parsing_2.11/jars/akka-parsing_2.11-2.4.11.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-http-experimental_2.11/jars/akka-http-experimental_2.11-2.4.11.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/net.sf.ehcache/ehcache-core/2.6.11/jars/ehcache-core.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.google.guava/guava/19.0/bundles/guava.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.asynchttpclient/async-http-client/2.0.11/jars/async-http-client.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.asynchttpclient/netty-resolver-dns/2.0.11/jars/netty-resolver-dns.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.asynchttpclient/netty-resolver/2.0.11/jars/netty-resolver.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.asynchttpclient/netty-codec-dns/2.0.11/jars/netty-codec-dns.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.javassist/javassist/3.20.0-GA/bundles/javassist.jar:/Users/ostdong/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/ostdong/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/Users/ostdong/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/ostdong/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-5.1.34.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-slick_2.11/jars/play-slick_2.11-2.0.0.jar:/Users/ostdong/.ivy2/cache/com.typesafe.slick/slick_2.11/bundles/slick_2.11-3.1.0.jar:/Users/ostdong/.ivy2/cache/com.typesafe.slick/slick-hikaricp_2.11/bundles/slick-hikaricp_2.11-3.1.0.jar:/Users/ostdong/.ivy2/cache/com.zaxxer/HikariCP-java6/bundles/HikariCP-java6-2.3.7.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.5.0.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-slick-evolutions_2.11/jars/play-slick-evolutions_2.11-2.0.0.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-jdbc-evolutions_2.11/jars/play-jdbc-evolutions_2.11-2.5.0.jar
-Scala compilation took 0.900253174 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Copy resource mappings: 
-	(/Users/ostdong/Communicourse/Communicourse/conf/application.conf,/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes/application.conf)
-	(/Users/ostdong/Communicourse/Communicourse/conf/logback.xml,/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes/logback.xml)
-	(/Users/ostdong/Communicourse/Communicourse/conf/messages,/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes/messages)
-	(/Users/ostdong/Communicourse/Communicourse/conf/routes,/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes/routes)
-Total time: 1 s, completed Feb 10, 2017 11:15:27 PM
+Read from stdout: /Users/ostdong/Communicourse/Communicourse/app/controllers/ChatgroupController.scala:108: identifier expected but 'null' found.
+/Users/ostdong/Communicourse/Communicourse/app/controllers/ChatgroupController.scala:108: identifier expected but 'null' found.
+Read from stdout: Ok.null
+      Ok.null
+Read from stdout: ^
+         ^
+Read from stdout: one error found
+one error found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 1 s, completed Feb 12, 2017 12:10:05 PM
+> server-post-command-error-handler
 > server-post-command-cleanup
 > server-handle-next-server-request
 > compile
 Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@32d66404, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@6ad8d3f, check cycles: false
 
 Initial source changes: 
 	removed:Set()
 	added: Set()
-	modified: Set(/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/twirl/main/views/html/login.template.scala)
+	modified: Set(/Users/ostdong/Communicourse/Communicourse/app/controllers/ChatgroupController.scala)
 Removed products: Set()
 External API changes: API Changes: Set()
 Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/twirl/main/views/html/login.template.scala)
+Initial directly invalidated sources: Set(/Users/ostdong/Communicourse/Communicourse/app/controllers/ChatgroupController.scala)
 
 Sources indirectly invalidated by:
 	product: Set()
 	binary dep: Set()
 	external source: Set()
-All initially invalidated sources: Set(/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/twirl/main/views/html/login.template.scala)
+All initially invalidated sources: Set(/Users/ostdong/Communicourse/Communicourse/app/controllers/ChatgroupController.scala)
 
 Read from stdout: Compiling 1 Scala source to /Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes...
 Compiling 1 Scala source to /Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes...
@@ -591,7 +760,7 @@ Default repositories:
 Getting compiler-interface from component compiler for Scala 2.11.8
 Other repositories:
 Default repositories:
-Running cached compiler 7d14912c, interfacing (CompilerInterface) with Scala compiler version 2.11.8
+Running cached compiler 3dce5045, interfacing (CompilerInterface) with Scala compiler version 2.11.8
 Calling Scala compiler with arguments  (CompilerInterface):
 	-deprecation
 	-unchecked
@@ -601,40 +770,20 @@ Calling Scala compiler with arguments  (CompilerInterface):
 	/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/classes:/Users/ostdong/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar
 	-classpath
 	/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.apache.commons/commons-lang3/3.4/jars/commons-lang3.jar:/Users/ostdong/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe/config/1.3.0/bundles/config.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.5.10.jar:/Users/ostdong/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.9.6.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.joda/joda-convert/1.8.1/jars/joda-convert.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.scala-lang/scala-reflect/2.11.7/jars/scala-reflect.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/bundles/jackson-datatype-jdk8-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/bundles/jackson-datatype-jsr310-2.7.8.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.slf4j/slf4j-api/1.7.21/jars/slf4j-api.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.slf4j/jul-to-slf4j/1.7.21/jars/jul-to-slf4j.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.slf4j/jcl-over-slf4j/1.7.21/jars/jcl-over-slf4j.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-streams_2.11/jars/play-streams_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.reactivestreams/reactive-streams/1.0.0/jars/reactive-streams.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-stream_2.11/jars/akka-stream_2.11-2.4.12.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.4.12.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.scala-lang.modules/scala-java8-compat_2.11/0.7.0/bundles/scala-java8-compat_2.11.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe/ssl-config-core_2.11/0.2.1/bundles/ssl-config-core_2.11.jar:/Users/ostdong/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.4.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.4.12.jar:/Users/ostdong/activator-dist-1.3.12/repository/commons-codec/commons-codec/1.10/jars/commons-codec.jar:/Users/ostdong/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/ostdong/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/ostdong/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.google.inject/guice/4.0/jars/guice.jar:/Users/ostdong/activator-dist-1.3.12/repository/javax.inject/javax.inject/1/jars/javax.inject.jar:/Users/ostdong/activator-dist-1.3.12/repository/aopalliance/aopalliance/1.0/jars/aopalliance.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.google.inject.extensions/guice-assistedinject/4.0/jars/guice-assistedinject.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe.netty/netty-reactive-streams-http/1.0.8/jars/netty-reactive-streams-http.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.typesafe.netty/netty-reactive-streams/1.0.8/jars/netty-reactive-streams.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-handler/4.0.41.Final/jars/netty-handler.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-buffer/4.0.41.Final/jars/netty-buffer.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-common/4.0.41.Final/jars/netty-common.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-transport/4.0.41.Final/jars/netty-transport.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-codec/4.0.41.Final/jars/netty-codec.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-codec-http/4.0.41.Final/jars/netty-codec-http.jar:/Users/ostdong/activator-dist-1.3.12/repository/io.netty/netty-transport-native-epoll/4.0.41.Final/jars/netty-transport-native-epoll-linux-x86_64.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-logback_2.11/jars/play-logback_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/ch.qos.logback/logback-classic/1.1.7/jars/logback-classic.jar:/Users/ostdong/activator-dist-1.3.12/repository/ch.qos.logback/logback-core/1.1.7/jars/logback-core.jar:/Users/ostdong/.ivy2/cache/org.webjars/flot/jars/flot-0.8.3.jar:/Users/ostdong/.ivy2/cache/org.webjars/jquery/jars/jquery-1.11.1.jar:/Users/ostdong/.ivy2/cache/org.webjars/explorercanvas/jars/explorercanvas-r3-1.jar:/Users/ostdong/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.3.6.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-http-core_2.11/jars/akka-http-core_2.11-2.4.11.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-parsing_2.11/jars/akka-parsing_2.11-2.4.11.jar:/Users/ostdong/.ivy2/cache/com.typesafe.akka/akka-http-experimental_2.11/jars/akka-http-experimental_2.11-2.4.11.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/net.sf.ehcache/ehcache-core/2.6.11/jars/ehcache-core.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.5.10.jar:/Users/ostdong/activator-dist-1.3.12/repository/com.google.guava/guava/19.0/bundles/guava.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.asynchttpclient/async-http-client/2.0.11/jars/async-http-client.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.asynchttpclient/netty-resolver-dns/2.0.11/jars/netty-resolver-dns.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.asynchttpclient/netty-resolver/2.0.11/jars/netty-resolver.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.asynchttpclient/netty-codec-dns/2.0.11/jars/netty-codec-dns.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.javassist/javassist/3.20.0-GA/bundles/javassist.jar:/Users/ostdong/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/ostdong/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/Users/ostdong/activator-dist-1.3.12/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/Users/ostdong/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/ostdong/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-5.1.34.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-slick_2.11/jars/play-slick_2.11-2.0.0.jar:/Users/ostdong/.ivy2/cache/com.typesafe.slick/slick_2.11/bundles/slick_2.11-3.1.0.jar:/Users/ostdong/.ivy2/cache/com.typesafe.slick/slick-hikaricp_2.11/bundles/slick-hikaricp_2.11-3.1.0.jar:/Users/ostdong/.ivy2/cache/com.zaxxer/HikariCP-java6/bundles/HikariCP-java6-2.3.7.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.5.0.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-slick-evolutions_2.11/jars/play-slick-evolutions_2.11-2.0.0.jar:/Users/ostdong/.ivy2/cache/com.typesafe.play/play-jdbc-evolutions_2.11/jars/play-jdbc-evolutions_2.11-2.5.0.jar
-Scala compilation took 0.997971504 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 1 s, completed Feb 10, 2017 11:16:01 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/Users/ostdong/Communicourse/Communicourse/}root/*:playForkReload
-Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@2f6e66d9, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Copy resource mappings: 
-	(/Users/ostdong/Communicourse/Communicourse/conf/application.conf,/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes/application.conf)
-	(/Users/ostdong/Communicourse/Communicourse/conf/logback.xml,/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes/logback.xml)
-	(/Users/ostdong/Communicourse/Communicourse/conf/messages,/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes/messages)
-	(/Users/ostdong/Communicourse/Communicourse/conf/routes,/Users/ostdong/Communicourse/Communicourse/target/scala-2.11/classes/routes)
-Total time: 1 s, completed Feb 10, 2017 11:16:03 PM
+Read from stdout: /Users/ostdong/Communicourse/Communicourse/app/controllers/ChatgroupController.scala:108: not enough arguments for method apply: (f: PartialFunction[play.api.http.MediaRange,play.api.mvc.Result])(implicit request: play.api.mvc.RequestHeader)play.api.mvc.Result in object render.
+Read from stdout: Unspecified value parameter f.
+/Users/ostdong/Communicourse/Communicourse/app/controllers/ChatgroupController.scala:108: not enough arguments for method apply: (f: PartialFunction[play.api.http.MediaRange,play.api.mvc.Result])(implicit request: play.api.mvc.RequestHeader)play.api.mvc.Result in object render.
+Unspecified value parameter f.
+Read from stdout: render()
+      render()
+Read from stdout: ^
+            ^
+Read from stdout: one error found
+one error found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 1 s, completed Feb 12, 2017 12:10:21 PM
+> server-post-command-error-handler
 > server-post-command-cleanup
 > server-handle-next-server-request

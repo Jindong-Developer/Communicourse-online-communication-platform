@@ -15,7 +15,10 @@ class ChatgroupController extends Controller {
  
   
 
-  
+   def testhttp  = Action {
+   var a="comes from server"
+   Ok(a)
+  } 
 
     
    def createchatgroup_processdata = Action.async { 
@@ -41,6 +44,7 @@ class ChatgroupController extends Controller {
   }
   
   
+  
     def createChatgroup(content:String) = Action.async { implicit request =>
       val groupname= content.split(':')(0)
       val members = content.split(':')(1)
@@ -55,6 +59,53 @@ class ChatgroupController extends Controller {
          )
     }
     
+    
+    
+   def updatechatgroup_members_processdata(content:String) = Action.async { 
+
+      implicit request =>
+     UserService.listAllUsers map { users => 
+    //val groupname=ChatgroupForm.form.bindFromRequest.get.group_name
+    //val userid=request.session.get("userid").toString.slice(5,request.session.get("userid").toString.length-1)
+    //val description=  ChatgroupForm.form.bindFromRequest.get.description
+    //content=content+":"+"a@wd.cda,aa@aa.com"
+    var members =content.split(':')(1)
+    var chatgroup_id= content.split(':')(0)
+    var members_id=""
+    
+    for(user <- users)
+    {  
+        if(members.contains(user.email))
+          members_id=members_id+user.id.toString+","      
+    }
+    var new_content=chatgroup_id+":"+members_id
+      Redirect(routes.ChatgroupController.getchatgroup_members(new_content))
+     }
+    
+  }
+  
+  def getchatgroup_members(content:String) = Action.async { 
+
+      implicit request =>
+      var idc=content.split(':')(0).toLong
+      ChatgroupService.getChatgroup(idc.toLong) map { chatgroups =>
+      var members = chatgroups.head.members.toString+content.split(':')(1)
+      var new_content=content.split(':')(0)+":"+members
+      Redirect(routes.ChatgroupController.updatechatgroup_members(new_content))
+     }
+  }
+  
+  def updatechatgroup_members(content:String) = Action.async { 
+
+      implicit request =>
+      var idc=content.split(':')(0)
+      var members =content.split(':')(1)
+      ChatgroupService.update_chatgroup_members(idc,members)  map { chatgroups =>
+      Ok("update_members_sucess")
+     }
+  }
+  
+  
 
     def goto_createchatgroup = Action{ 
       Ok(views.html.create_chatgroup(ChatgroupForm.form, Seq.empty[Chatgroup]))
@@ -103,7 +154,7 @@ class ChatgroupController extends Controller {
       val userid  =request.session.get("userid").toString.slice(5,request.session.get("userid").toString.length-1)
       val member_chatgroups= chatgroups.filter(_.members.contains(","+userid+",") )
       val owner_chatgroups= chatgroups.filter(_.owner ==  userid)
-      Ok(views.html.main(ChatgroupForm.form, owner_chatgroups,member_chatgroups,owner_chatgroups.length))//.withSession("username" ->username)
+      Ok(views.html.main(ChatgroupForm.form, owner_chatgroups,member_chatgroups,owner_chatgroups.length,member_chatgroups.length)).withSession( request.session+ ("username" ->username))
       }
     }   
    
@@ -111,7 +162,7 @@ class ChatgroupController extends Controller {
     def exitChatgroup(content:String) = Action.async { implicit request =>
       var members=content.split(':')(1)
       var userid=content.split(':')(2)
-      ChatgroupService.update_chatgroup(content.split(':')(0), members.replace(","+userid+","  , ",")) map { chatgroups => 
+      ChatgroupService.update_chatgroup_members(content.split(':')(0), members.replace(","+userid+","  , ",")) map { chatgroups => 
         Redirect(routes.ChatgroupController.list_members())
       }
     }
