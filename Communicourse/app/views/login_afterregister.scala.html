@@ -1,5 +1,5 @@
 
-@(userForm: Form[model.UserFormData],users : Seq[model.User],flag:String)
+@(userForm: Form[model.UserFormData],users : Seq[model.User],username:String)
 <!DOCTYPE html>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
@@ -17,6 +17,7 @@
 </head>
 
 <body>
+
 
      <form id="user-login-form" role="form" action='@routes.UserController.login()' method="post" >
 
@@ -46,7 +47,7 @@
 
                             User name:
 
-                              <input name="userName" id="userName" type="text" style="width:100px; height:22px;" value="David">
+                              <input name="userName" id="userName" type="text" style="width:100px; height:22px;" value="@username">
 
                       </td>
 
@@ -87,7 +88,7 @@
 
                             password:
 
-                            <input type="password" name="password" style="width:100px; height:22px;" value="123456">
+                            <input type="password" name="password" style="width:100px; height:22px;" value="">
 
                         </td>
 						
@@ -109,12 +110,12 @@
     </div>
 
     </form>
-    <script language="javascript">
-        
-        if('@flag'=="wrong")       
-            alert('Password or username wrong please login again');
+    
+   <script language="javascript">
+               
+                   alert('register successful, pleas login!');
             
-     </script>
+                </script>
 </body>
 
 </html>

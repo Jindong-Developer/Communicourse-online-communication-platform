@@ -1,4 +1,4 @@
-@(chatgroupForm: Form[model.ChatgroupFormData],chatgroupso : Seq[model.Chatgroup],chatgroupsm : Seq[model.Chatgroup],a:Int,mn:Int)
+@(chatgroupForm: Form[model.ChatgroupFormData],chatgroupso : Seq[model.Chatgroup],chatgroupsm : Seq[model.Chatgroup])
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
@@ -29,13 +29,13 @@
     <title>Communicourse</title>  
     <script language="javascript">
 		
-		function chatGroups(){
+	function chatGroups(){
 		var chatGroups_root = new Ext.tree.TreeNode({
         id:"root1",
 		collapsible :false,
         text:"root1",
        });
-	//for(i;i<@a;i++)
+
 	@for(group <- chatgroupso){
 	
 	//	var name='@chatgroupso.apply(1).group_name';

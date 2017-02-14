@@ -13,35 +13,30 @@ import java.util.Date
 
 class ChatgroupController extends Controller {
  
-  
+   
 
-   def testhttp  = Action {
-   var a="comes from server"
-   Ok(a)
-  } 
 
     
    def createchatgroup_processdata = Action.async { 
 
-      implicit request =>
-     UserService.listAllUsers map { users => 
-    val groupname=ChatgroupForm.form.bindFromRequest.get.group_name
-    val userid=request.session.get("userid").toString.slice(5,request.session.get("userid").toString.length-1)
-    val description=  ChatgroupForm.form.bindFromRequest.get.description
-    var members = ChatgroupForm.form.bindFromRequest.get.members
-    var test= "no"
-    var members_id=","
+       implicit request =>
+       UserService.listAllUsers map { users => 
+           val groupname=ChatgroupForm.form.bindFromRequest.get.group_name
+           val userid=request.session.get("userid").toString.slice(5,request.session.get("userid").toString.length-1)
+           val description=  ChatgroupForm.form.bindFromRequest.get.description
+           var members = ChatgroupForm.form.bindFromRequest.get.members
+           var test= "no"
+           var members_id=","
     
-    for(user <- users)
-    {
-        if(members.contains(user.email))
-          members_id=members_id+user.id.toString+","      
+           for(user <- users)
+           {
+              if(members.contains(user.email))
+                members_id=members_id+user.id.toString+","      
+            }
+            var content=groupname+":"+members_id+":"+userid+":"+description+":"+test
+            Redirect(routes.ChatgroupController.createChatgroup(content))
+        }
     }
-    var content=groupname+":"+members_id+":"+userid+":"+description+":"+test
-      Redirect(routes.ChatgroupController.createChatgroup(content))
-     }
-    
-  }
   
   
   
@@ -65,10 +60,6 @@ class ChatgroupController extends Controller {
 
       implicit request =>
      UserService.listAllUsers map { users => 
-    //val groupname=ChatgroupForm.form.bindFromRequest.get.group_name
-    //val userid=request.session.get("userid").toString.slice(5,request.session.get("userid").toString.length-1)
-    //val description=  ChatgroupForm.form.bindFromRequest.get.description
-    //content=content+":"+"a@wd.cda,aa@aa.com"
     var members =content.split(':')(1)
     var chatgroup_id= content.split(':')(0)
     var members_id=""
@@ -95,15 +86,15 @@ class ChatgroupController extends Controller {
      }
   }
   
-  def updatechatgroup_members(content:String) = Action.async { 
+   def updatechatgroup_members(content:String) = Action.async { 
 
       implicit request =>
       var idc=content.split(':')(0)
       var members =content.split(':')(1)
       ChatgroupService.update_chatgroup_members(idc,members)  map { chatgroups =>
       Ok("update_members_sucess")
-     }
-  }
+      }
+    }
   
   
 
@@ -154,9 +145,19 @@ class ChatgroupController extends Controller {
       val userid  =request.session.get("userid").toString.slice(5,request.session.get("userid").toString.length-1)
       val member_chatgroups= chatgroups.filter(_.members.contains(","+userid+",") )
       val owner_chatgroups= chatgroups.filter(_.owner ==  userid)
-      Ok(views.html.main(ChatgroupForm.form, owner_chatgroups,member_chatgroups,owner_chatgroups.length,member_chatgroups.length)).withSession( request.session+ ("username" ->username))
+      Ok(views.html.main(ChatgroupForm.form, owner_chatgroups,member_chatgroups)).withSession( request.session+ ("username" ->username))
       }
-    }   
+    } 
+    
+    def aftercreatechatgroup_update() = Action.async { implicit request =>
+      ChatgroupService.listAllChatgroups map { chatgroups => 
+      
+      val userid  =request.session.get("userid").toString.slice(5,request.session.get("userid").toString.length-1)
+      val member_chatgroups= chatgroups.filter(_.members.contains(","+userid+",") )
+      val owner_chatgroups= chatgroups.filter(_.owner ==  userid)
+      Ok(views.html.main(ChatgroupForm.form, owner_chatgroups,member_chatgroups))
+      }
+    }  
    
    
     def exitChatgroup(content:String) = Action.async { implicit request =>

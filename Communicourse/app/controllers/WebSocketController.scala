@@ -66,7 +66,7 @@ class WebSocketController @Inject()(implicit actorSystem: ActorSystem,
       userflow_create=true
       }
     
-       Ok(views.html.login(UserForm.form, Seq.empty[User]))
+       Ok(views.html.login(UserForm.form, Seq.empty[User],"first"))
     
       }        
     }

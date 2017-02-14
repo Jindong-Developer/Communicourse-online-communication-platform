@@ -16,6 +16,7 @@
     <tr>
       <th style="padding:0 0 0 0; width: 15%; text-transform:none;">Group Name:</th>
       <th style="padding:0 0 0 0; width: 33%; text-transform:none;">Group Description:</th>
+      <th style="padding:0 0 0 0; width: 20%; text-transform:none;">Invite new Memebrs:</th>
       <th style="padding:0 0 0 0; width: 17%; text-transform:none;">Group Operation:</th>
     </tr>
     
@@ -24,7 +25,10 @@
       <td style="text-align:left;">@chatgroup.group_name</td>
       <td style="text-align:left;">@chatgroup.description</td>
       <td style="text-align:left;">
-          <a href="@routes.ChatgroupController.exitChatgroup(chatgroup.idc.toString+":"+chatgroup.members+":"+userid)">Exit</a></td>
+          <a style="text-decoration:underline; color:#0000FF" href="javascript:void(0)" onclick="inviteMember(@chatgroup.idc)" >Invite</a>
+      </td>
+      <td style="text-align:left;">
+          <a style="text-decoration:underline; color:#0000FF" href="@routes.ChatgroupController.exitChatgroup(chatgroup.idc.toString+":"+chatgroup.members+":"+userid)">Exit</a></td>
     </tr>
          
     }

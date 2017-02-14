@@ -16,12 +16,11 @@ function inviteMember(groupid){
 		  if (xmlhttp.readyState==4 && xmlhttp.status==200)
 		    {
 		        var c=xmlhttp.responseText;
-		     
-		        alert(c);
+		        alert("opration successful!");
 		    }
 		  }
         var url="/updatechatgroup_members_processdata/"+groupid+":"+name
-		  alert(content)
+		  
 		xmlhttp.open("GET",url,true);
 		xmlhttp.send();
 		 

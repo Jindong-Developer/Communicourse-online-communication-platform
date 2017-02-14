@@ -17,7 +17,7 @@
 	    var domains=domain.split("/");
 	    var domain2=domains[0]+"//"+domains[2];
 	  
-	    //alert(domain2);
+	   
 	    document.write('<base href="'+domain2+'"/>');
 	</script>
 	
@@ -33,19 +33,17 @@
 
         
         
- <script language="javascript">
+    <script language="javascript">
 		
-		function groupmembers(){
+	 function groupmembers(){
 
-	var allmembers='@new_content.split('|')(1)';
-	var members=allmembers.split(";");
-	//var members='@new_content.split('|')(1).split(';')';
-	var member='';
-	for(var i=0;i<members.length;i++){
-	   
-	   var member=member+'<br><p>'+members[i]+'</p>';
-	}
-	 //var member='<br><p>+members[i]+</p>';
+         var allmembers='@new_content.split('|')(1)';
+         var members=allmembers.split(";");
+         var member='';
+	     for(var i=0;i<members.length;i++){
+	          var member=member+'<br><p>'+members[i]+'</p>';
+	     }
+	 
     
 	var group_member = new Ext.Panel({
 		id: 'group_member',
@@ -73,7 +71,8 @@
 				bodyStyle:'margin-left:10px',
 				handler: function () {
 					//  alert("invite");
-			          inviteMember();	   
+					var chatgroup_id="@new_content.split('|')(0)"
+			        inviteMember(chatgroup_id);	   
 				}
 			}]
 
@@ -82,68 +81,168 @@
          </script>  
          
          <script language="javascript">
-        //specify the content of chat pannel. Currently invoked by send Button. you can use it anywhere.
-        function showMessage(){
-          var message1='<div style="text-align:left;">user2:&nbsp;<span style="background-color:#50dd30;">bla bla bla...&nbsp;</span></div>';
-          var message2='<div style="text-align:right;"><span style="background-color:#50dd30;">&nbsp;bla bla bla...</span>&nbsp;:me</div>';
-          var message3='<div style="text-align:right;"><span><a href="url"><img width="40" height="40" src="img/chi.png"/></a></span>&nbsp;:me</div>';
-          var message4='<div style="text-align:left;"><span height="30" style="vertical-align:middle;">user3:&nbsp;<span style="background-color:#50dd30;"><a href="url"><img width="30" height="30" src="images/doc.png"/>document path&nbsp;</a></span></span></div>';
-         
-          var chatContent=message1+message2+message3+message4;
-          Ext.getCmp('chat_content').body.update(chatContent);
-                              
-        }
-    
-          </script>
+         var i=1;
+         function showall(){
+             @for(item <- message){
+                 i++;
+                 var mtype='@item.typee';
+                 var userid='@item.user';
+                 var text='@item.content.split(':')(1)';
+                 var username='@item.content.split(':')(0)';
+                 tshowMessage(userid,mtype,text,username);
+             }
+            
+         }
+         </script>
          
         
+        
+        <script language="javascript">
+        function tshowMessage(userid,mtype,text,username){
+            var o_userid='@new_content.split('|')(4)';
+                     if(userid == o_userid)
+                     {
+                         if(mtype=="txt")
+                         {
+                            var text_form1='<div style="text-align:right;"><span style="background-color:#50dd30;">&nbsp;';
+                            var text_form2='</span>&nbsp;:me</div>'; 
+                            var message=text_form1+text+text_form2;
+                            message=Ext.getCmp('chat_content').body.dom.innerHTML+message+'<br>';
+                            Ext.getCmp('chat_content').body.update(message);
+                         }
+                         if(mtype=="img")
+                         {
+                             var text_form='<div style="text-align:right;"><span><a target="_blank" href="/download_img/'
+                           
+                             var text_form1='"><img width="40" height="40" src="img/';
+                     
+                             var source=text+'"/></a></span>&nbsp;:me</div>';
+                             var message=text_form+text+text_form1+source;
+                       
+                             message=Ext.getCmp('chat_content').body.dom.innerHTML+message+'<br>';
+                             Ext.getCmp('chat_content').body.update(message);
+                         }
+                         if(mtype=="doc")
+                         {
+                            var text_form1='<div style="text-align:right;"><span height="30" style="vertical-align:middle;"><span style="background-color:#50dd30;"><a target="_blank" href="/download_doc/';
+                            var text_form2='"><img width="30" height="30" src="images/doc.png"/>';
+                            var text_form3='&nbsp;</a></span>&nbsp;:me</span></div>';
+                            var message=text_form1+text+text_form2+text+text_form3;
+                            message=Ext.getCmp('chat_content').body.dom.innerHTML+message+'<br>';
+                            Ext.getCmp('chat_content').body.update(message);
+          
+                         }
+                     }
+                     else
+                     {
+                          if(mtype=="txt")
+                         {
+                            var text_form1='<div style="text-align:left;">'
+                            var text_form2=':&nbsp;<span style="background-color:#50dd30;">';
+                            var text=text+'&nbsp;</span></div>';
+                            var message=text_form1+username+text_form2+text;
+                            message=Ext.getCmp('chat_content').body.dom.innerHTML+message+'<br>';
+                            Ext.getCmp('chat_content').body.update(message);
+                         }
+                         if(mtype=="img")
+                         {
+                            var text_form1='<div style="text-align:left;"><span>'
+                         
+                            var text_form2=':&nbsp;<a target="_blank" href="/download_img/';
+                    
+                            var text_form3='"><img width="40" height="40" src="img/';
+                      
+                            var text_form4='"/></a></span></div>';
+                            var message=text_form1+username+text_form2+text+text_form3+text+text_form4;
+                            message=Ext.getCmp('chat_content').body.dom.innerHTML+message+'<br>';
+                            Ext.getCmp('chat_content').body.update(message);
+          
+                         }
+                         if(mtype=="doc")
+                         {
+                             var text_form1='<div style="text-align:left;"><span height="30" style="vertical-align:middle;">';
+                             var text_form2=':&nbsp;<span style="background-color:#50dd30;"><a target="_blank" href="/download_doc/'
+                             var text_form3='"><img width="30" height="30" src="images/doc.png"/>';
+                             var text_form4='&nbsp;</a></span></span></div>';
+                             var message=text_form1+username+text_form2+text+text_form3+text+text_form4;
+                             message=Ext.getCmp('chat_content').body.dom.innerHTML+message+'<br>';
+                             Ext.getCmp('chat_content').body.update(message);
+                         }
+                         
+                     }
+        }
+    
+        </script>
       
         <script language="javascript">
-                var url = '@new_content.split('|')(2)';
-                              
-                var connection = new WebSocket(url);
-
-                connection.onopen = function () {
-                    alert('Success in Chatroom');
-                };
+           
+            var url = '@new_content.split('|')(2)';
+            var connection = new WebSocket(url);
+            
+            connection.onopen = function () {
+                alert('Success in Chatroom');
+            };
                 
-                function sendmessage(mytype,text){
+                
+            function sendmessage(mytype,text){
           
-                    if(mytype == "doc"){
-                            ;
-                    }
-                    
-                     username='@new_content.split('|')(3)';
-                    connection.send(username+":"+text+"|"+mytype);
-                    alert(username+":"+text+"信息已发送");
+                username='@new_content.split('|')(3)';
+                var userid='@new_content.split('|')(4)';
+                var content=username+':'+text+'|'+'@new_content.split('|')(0)';
+                if(mytype=="txt")
+                    addmessage_todb(content);
+                connection.send(userid+'|'+username+":"+text+"|"+mytype);
+            }
+
+            connection.onmessage = function (event) {
                   
-                }
-
-                 connection.onmessage = function (event) {
-                   // var content=event.data.toString().split("|")(0);
-                    //var mtype=event.data.toString().split("|")(1);
-                    //if(mtype=="text")
-                       document.getElementById('messages').value=event.data;
-                    //if(mtype=="doc")
-                      // document.getElementById('messages').value=content.split(":")(0);
-                }
+                var content=event.data;
+                var userid=content.split("|")[0];
+                var mtype=content.split("|")[2];
+                var username=content.split("|")[1].split(":")[0];
+                var text=content.split("|")[1].split(":")[1]
+                tshowMessage(userid,mtype,text,username);
+                var content = Ext.getCmp('chat_content').body.dom; 
+                content.scrollTop = content.scrollHeight - content.offsetHeight;
+            }
+                
+            function addmessage_todb(content){
+                     
+		        var xmlhttp;
+		        if (window.XMLHttpRequest)
+		        {// code for IE7+, Firefox, Chrome, Opera, Safari
+		            xmlhttp=new XMLHttpRequest();
+	            }
+	            else
+	            {// code for IE6, IE5
+	            	xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+	            }
+	            
+	            xmlhttp.onreadystatechange=function()
+	            {
+	            	if (xmlhttp.readyState==4 && xmlhttp.status==200)
+		            {
+		                var c=xmlhttp.responseText;
+		            }
+		        }
+                var url="/addMessage_text/"+content
+	            xmlhttp.open("GET",url,true);
+	           	xmlhttp.send();
+            }
+          
         </script>
-
-        <script language="javascript">
-    
-        //used to get information about the group
+        
+        
+        <script type="text/javascript">
          function getGroupInforamtion(){
              var groupInforamtion= "@new_content.split('|')(0)";
              return groupInforamtion;
          }
          </script>
-         
-         
-         
-         <script language="javascript" src="js/chat_editor.js"></script>
-         
-         
-       
+    
+         <script type="text/javascript" src="js/chat_editor.js"></script>
+        
+      
         
 </body>
 </html>

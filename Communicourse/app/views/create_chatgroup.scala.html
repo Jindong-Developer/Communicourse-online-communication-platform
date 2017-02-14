@@ -14,7 +14,7 @@
 </head>
 <body style="background-color:#FFFFFF">
 <div style="width:30%; margin: 0 auto; margin-top:25px; margin-left: 30px;">
- <form id="chatgroup-data-form" role="form" action='@routes.ChatgroupController.createchatgroup_processdata()' method="post" >
+ <form id="chatgroup-data-form" onsubmit="return true;" role="form" action='@routes.ChatgroupController.createchatgroup_processdata()' method="post" >
     
   <table class="table11" style="width: 700px;">
     <tr>
@@ -38,12 +38,27 @@
     </tr>
     
     <tr>
-      <td colspan="2" align="center"><input style="background-color:#d0dDd4; width:100px" type="submit" name="Submit" value="Create" class="btn" onmouseover="changebg(this,'1')" onmouseout="changebg(this,'1')">
+      <td colspan="2" align="center"><input style="background-color:#d0dDd4; width:100px"  name="Submit" onclick="update_list()" value="Create" class="btn" onmouseover="changebg(this,'1')" onmouseout="changebg(this,'1')">
         &nbsp;&nbsp;
         </td>
     </tr>
   </table>
   </form>
 </div>
+
+    
+         
+    <script language="javascript">
+    function update_list() {
+   
+	    var domain=document.URL;
+        var domains=domain.split("/");
+        var domain2=domains[0]+"//"+domains[2]+"/aftercreatechatgroup_update";  
+    	alert(domain2);
+        window.location.href=domain2;
+        //alert("ok!!");
+        document.getElementById('chatgroup-data-form').submit()
+    }
+     </script>
 </body>
 </html>

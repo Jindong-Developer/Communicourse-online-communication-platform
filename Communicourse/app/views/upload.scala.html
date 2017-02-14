@@ -23,11 +23,12 @@
 
 </head>
 <body> 
-					 <form id='uploadform'  action="/addMessage_file/content.split('|')(0)" method="post" enctype="multipart/form-data">
-			           <input type="file" name="document" id="doc">
-			            <button type="submit" onclick="sendWebsocket()" >submit</button>
-			         </form>
-			         <textarea id="message_send" rows="7" cols="93"></textarea>
+			<form id='uploadform'  action="/addMessage_file/content.split('|')(0)" method="post" enctype="multipart/form-data">
+			     <input type="file" name="document" id="doc">
+			     <button type="submit" onclick="sendWebsocket()" >submit</button>
+		    </form>
+			         
+			 <textarea id="message_send" rows="7" cols="93"></textarea>
 			           
 			          
 			 
@@ -38,11 +39,10 @@
     	     myForm.setAttribute('action','/addMessage_file/'+info);
     	     
              function sendWebsocket(){
-                 
+                
                  var text = document.getElementById('doc').value;
                  var pos=text.lastIndexOf("\\");
                  text=text.substring(pos+1);
-                 
                  if(text.indexOf(".jpg")!=-1 || text.indexOf(".png")!=-1||text.indexOf(".gif")!=-1||text.indexOf(".jpeg")!=-1 ||  text.indexOf(".bmp")!=-1 ) window.parent.sendmessage("img", text);
                  else window.parent.sendmessage("doc", text);
              }

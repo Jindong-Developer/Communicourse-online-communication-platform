@@ -6,17 +6,17 @@ var htmlEditor;
 Ext.onReady(function () {
 
 	Ext.QuickTips.init();
-
+	
 	var chat_content = new Ext.Panel({
-                       		id: 'chat_content',
-                       		height: 250,
-                       	    width: 600,
-                       		border: true,
-                       		autoScroll: true,
-                       		bodyStyle:'background:#f8fAfA;',
-                       		html: '',
-                            	});
-
+		id: 'chat_content',
+		height: 250,
+	    width: 600,
+		border: true,
+		autoScroll: true,
+		bodyStyle:'background:#f8fAfA;',
+		html: '',
+	});
+	
 	var group_member = groupmembers();
 
 	var editor =new Ext.Panel({
@@ -49,10 +49,12 @@ Ext.onReady(function () {
 				name: 'finsh',
 				handler: function () {
 					var text=document.getElementById('uframe').contentWindow.document.getElementById('message_send');
+					
+					var temp_text=text.value
 					text.value='';
-					showMessage();
-                    sendmessage("txt", text);
-
+					if(temp_text!="")
+                       sendmessage("txt", temp_text);
+					
 				}
 			}
 	});
@@ -101,7 +103,9 @@ Ext.onReady(function () {
 	function resetForm() {
 		inputForm.form.reset();
 
-	}
+	} 
+	  
+	showall();
 
 
 });

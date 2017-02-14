@@ -2,43 +2,58 @@
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
 
-# An example controller showing a sample home page
-GET     /socket/:index                 controllers.WebSocketController.socket(index:String)
+
+
 
 # Home page
 GET     /                           controllers.WebSocketController.index
-GET     /getUser                         controllers.UserController.getUser
-GET     /listAllChatgroup                      controllers.ChatgroupController.listAll
-POST    /add                        controllers.UserController.addUser
+GET     /socket/:index                 controllers.WebSocketController.socket(index:String)
 
-POST    /login                       controllers.UserController.login()
 
-GET     /delete/:id                 controllers.UserController.deleteUser(id : Long)
-POST    /createchatgroup_processdata              controllers.ChatgroupController.createchatgroup_processdata
-GET     /deleteChatgroup/:idc               controllers.ChatgroupController.deleteChatgroup(idc : Long)
-GET     /exitChatgroup/:content   controllers.ChatgroupController.exitChatgroup(content:String)
-GET    /register                 controllers.UserController.register
+
+GET     /getUser                       controllers.UserController.getUser
+POST    /add                           controllers.UserController.addUser
+POST    /login                         controllers.UserController.login()
+GET     /delete/:id                    controllers.UserController.deleteUser(id : Long)
+GET     /register                 controllers.UserController.register
 POST    /update_personalinfor      controllers.UserController.update_personalinfor
 POST    /update_password          controllers.UserController.update_password
 GET     /inpassword                controllers.UserController.in_password
+GET      /getUsers_nameandidentifi/:content              controllers.UserController.getUsers_nameandidentifi(content:String)
+
+
+
+GET     /listAllChatgroup                      controllers.ChatgroupController.listAll
+POST    /createchatgroup_processdata              controllers.ChatgroupController.createchatgroup_processdata
+GET     /deleteChatgroup/:idc               controllers.ChatgroupController.deleteChatgroup(idc : Long)
+GET     /exitChatgroup/:content   controllers.ChatgroupController.exitChatgroup(content:String)
+POST    /createchatgroup_processdata              controllers.ChatgroupController.createchatgroup_processdata
+GET     /deleteChatgroup/:idc               controllers.ChatgroupController.deleteChatgroup(idc : Long)
+GET     /exitChatgroup/:content   controllers.ChatgroupController.exitChatgroup(content:String)
 GET     /list_owner                controllers.ChatgroupController.list_owner
 GET     /createChatgroup/:content                controllers.ChatgroupController.createChatgroup(content:String)
 GET     /list_members_owner/:username                controllers.ChatgroupController.list_members_owner(username:String)
+GET     /aftercreatechatgroup_update                controllers.ChatgroupController.aftercreatechatgroup_update
 GET     /updatechatgroup_members/:content                controllers.ChatgroupController.updatechatgroup_members(content:String)
-GET     /updatechatgroup_members_processdata/:content                controllers.ChatgroupController.updatechatgroup_members_processdata(content:String)
+GET     /updatechatgroup_members_processdata/:content               controllers.ChatgroupController.updatechatgroup_members_processdata(content:String)
 GET     /getchatgroup_members/:content                controllers.ChatgroupController.getchatgroup_members(content:String)
-
-
 GET     /list_members                controllers.ChatgroupController.list_members
 GET     /goto_createchatgroup                controllers.ChatgroupController.goto_createchatgroup
-POST    /addMessage_text                 controllers.MessageController.addMessage_text
+GET      /getChatgroup/:idc              controllers.ChatgroupController.getChatgroup(idc:String)
+
+
+
+
+
+GET    /addMessage_text/:content               controllers.MessageController.addMessage_text(content:String)
 POST    /addMessage_file/:chat_group                  controllers.MessageController.addMessage_file(chat_group :String)
 #GET     /listAllMessage                      controllers.MessageController.listAll
-#GET     /download_file/:file_name                    controllers.MessageController.download_file(file_name :String)
+GET     /download_doc/:doc_name                    controllers.MessageController.download_doc(doc_name :String)
+GET     /download_img/:img_name                    controllers.MessageController.download_img(img_name :String)
 GET      /list_message/:idc                controllers.MessageController.listAll(idc:String)
-GET      /getChatgroup/:idc              controllers.ChatgroupController.getChatgroup(idc:String)
-GET      /getUsers_nameandidentifi/:content              controllers.UserController.getUsers_nameandidentifi(content:String)
-GET     /testhttp                controllers.ChatgroupController.testhttp
+
+
+
 
 
 # Map static resources from the /public folder to the /assets URL path
