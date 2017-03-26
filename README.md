@@ -11,7 +11,7 @@ Step 2:  download the Activator tools "http://www.lightbend.com/community/core-t
 
       2.2 execute "./activator ui "command in Terminal; a website wil be opened automatically, there you can open the project dowanloaded from the git repository.
 
-      2.3 you can start to write your code in the website.
+      2.3 you can start to write your code in the website. 
 
 Step 3: once you write some codes, you can push it to the repository, better with following commands:
       "git pull"
